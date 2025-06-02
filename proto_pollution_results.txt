@@ -1,9 +1,0 @@
-[https://hubspot.com] Prototype pollution possible at https://hubspot.com?prototype[evil]=1
-[https://hubspot.com] Prototype pollution possible at https://hubspot.com?prototype[evil]=1
-[https://app.hubspot.com] Prototype pollution possible at https://app.hubspot.com?prototype[evil]=1
-[https://community.hubspot.com] Prototype pollution possible at https://community.hubspot.com?__proto__[test]=true
-[https://community.hubspot.com] Prototype pollution possible at https://community.hubspot.com?constructor.prototype.test=123
-[https://community.hubspot.com] Prototype pollution possible at https://community.hubspot.com?prototype[evil]=1
-[https://knowledge.hubspot.com] Prototype pollution possible at https://knowledge.hubspot.com?prototype[evil]=1
-[https://blog.hubspot.com] Prototype pollution possible at https://blog.hubspot.com?prototype[evil]=1
-[https://api.hubspot.com] Prototype pollution possible at https://api.hubspot.com?prototype[evil]=1
