@@ -1,0 +1,38 @@
+--- 
++++ 
+@@ -9,7 +9,7 @@
+ 
+         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+-        <link rel="canonical" href="https://events.hubspot.com/">
++        <link rel="canonical" href="https://events.hubspot.com/?__proto__.polluted=%22yes%22">
+ 
+         <title>HubSpot</title>
+         <meta name="keywords" content="">
+@@ -46,7 +46,7 @@
+         
+         <meta property="og:title" content="HubSpot" />
+         <meta property="og:description" content="With events happening all over the world, we’re sure you’ll find the right one to take your product knowledge to the next level."/>
+-        <meta property="og:url" content="https://events.hubspot.com/" />
++        <meta property="og:url" content="https://events.hubspot.com/?__proto__.polluted=%22yes%22" />
+         <meta property="og:type" content="website" />
+         <meta property="og:ttl" content="777600" />
+ 
+@@ -205,7 +205,7 @@
+             Globals.dashboard_key_expected         = false;
+             Globals.global_search_enabled          = true;
+             Globals.global_search_indices          = 'chapter,event';
+-            Globals.global_search_key              = 'ODNhODM5Y2QwNjg3YTRlZTY2ZmVhZjI1M2IxZTY4N2VmOWM4ZjFlZWQyOGI0MDgyNDdlZGE3Yjg5NTNiOThlYnZhbGlkVW50aWw9MTc0ODk1MDkzNCZhdHRyaWJ1dGVzVG9SZXRyaWV2ZT0lNUIlMjJjb3VudHJ5X2NvZGUlMjIlMkMrJTIyY2hhcHRlcl9sb2NhdGlvbiUyMiUyQyslMjJjb3VudHJ5JTIyJTJDKyUyMnBpY3R1cmVfdXJsJTIyJTJDKyUyMnN0YXRlX2Z1bGwlMjIlMkMrJTIydGl0bGUlMjIlMkMrJTIybWVtYmVyX2NvdW50JTIyJTJDKyUyMnVybCUyMiUyQyslMjJjaGFwdGVyX2NvdW50cnklMjIlMkMrJTIyY2hhcHRlcl9zdGF0ZSUyMiUyQyslMjJyZWxhdGl2ZV91cmwlMjIlMkMrJTIybG9nbyUyMiUyQyslMjJjaGFwdGVyX3RpdGxlJTIyJTJDKyUyMmV2ZW50X3R5cGVfbG9nbyUyMiUyQyslMjJyZWdpb25faWQlMjIlMkMrJTIyY2l0eSUyMiU1RCZmaWx0ZXJzPXB1YmxpY2x5X3NlYXJjaGFibGUlM0QxJnJlc3RyaWN0SW5kaWNlcz1odWJzcG90X2NoYXB0ZXJfaW5kZXhfcHJvZHVjdGlvbiUyQ2h1YnNwb3RfZXZlbnRfaW5kZXhfcHJvZHVjdGlvbiZhdHRyaWJ1dGVzVG9IaWdobGlnaHQ9JTVCJTVE';
++            Globals.global_search_key              = 'YjI1NzQxMTQ2ODVlNzViZDcyY2YxNGIwZjg2MzM5YWQ5YWU4NGFiNjEzMWEyN2IwNzZmZDg4OTNjOWQ3ZTYyMnZhbGlkVW50aWw9MTc0ODk1MDkzOSZhdHRyaWJ1dGVzVG9SZXRyaWV2ZT0lNUIlMjJzdGF0ZV9mdWxsJTIyJTJDKyUyMnJlbGF0aXZlX3VybCUyMiUyQyslMjJjb3VudHJ5JTIyJTJDKyUyMnVybCUyMiUyQyslMjJwaWN0dXJlX3VybCUyMiUyQyslMjJjb3VudHJ5X2NvZGUlMjIlMkMrJTIydGl0bGUlMjIlMkMrJTIyY2hhcHRlcl9zdGF0ZSUyMiUyQyslMjJjaGFwdGVyX3RpdGxlJTIyJTJDKyUyMmNoYXB0ZXJfY291bnRyeSUyMiUyQyslMjJsb2dvJTIyJTJDKyUyMmV2ZW50X3R5cGVfbG9nbyUyMiUyQyslMjJjaGFwdGVyX2xvY2F0aW9uJTIyJTJDKyUyMmNpdHklMjIlMkMrJTIycmVnaW9uX2lkJTIyJTJDKyUyMm1lbWJlcl9jb3VudCUyMiU1RCZmaWx0ZXJzPXB1YmxpY2x5X3NlYXJjaGFibGUlM0QxJnJlc3RyaWN0SW5kaWNlcz1odWJzcG90X2NoYXB0ZXJfaW5kZXhfcHJvZHVjdGlvbiUyQ2h1YnNwb3RfZXZlbnRfaW5kZXhfcHJvZHVjdGlvbiZhdHRyaWJ1dGVzVG9IaWdobGlnaHQ9JTVCJTVE';
+             Globals.language_code                  = 'en';
+             Globals.show_chat_widget               = false;
+             Globals.show_sidebar                   = false;
+@@ -219,7 +219,7 @@
+             Globals.HOMEPAGE_SHOW_TITLES_IN_GROUPS_BY_REGION = true;
+             Globals.USE_FIRST_AND_LAST_NAME_FIELDS = true;
+             
+-            Globals.global_attendee_index       = 'brTJ0F9gbMCx23YvjNRldJnchewc0Kbdf5buS78QlRAWX8aSSzYXytTXHzk2KQ3K';
++            Globals.global_attendee_index       = 'RzZiwy8Wi8Z03H5eE9MYmREAGKhoyb8tVdh3o07wsdXpYMhBdVTAHBal655eih00';
+             Globals.SEARCH_DEFAULT_CHAPTER_LOGO = {"url":"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-hubspot/contentbuilder/Screenshot%202024-01-25%20at%201.29.40%E2%80%AFPM.png","path":"contentbuilder/Screenshot 2024-01-25 at 1.29.40 PM.png","thumbnail_width":0,"thumbnail_height":0,"thumbnail_format":"auto","thumbnail_url":"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,h_200,q_auto:good,w_200/v1/gcs/platform-data-hubspot/contentbuilder/Screenshot%202024-01-25%20at%201.29.40%E2%80%AFPM.png"};
+             Globals.EVENT_THUMB_DEFAULT = {"url":"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-hubspot/contentbuilder/hubspotthumbnail.png","path":"contentbuilder/hubspotthumbnail.png","thumbnail_width":0,"thumbnail_height":0,"thumbnail_format":"auto","thumbnail_url":"https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,h_200,q_auto:good,w_200/v1/gcs/platform-data-hubspot/contentbuilder/hubspotthumbnail.png"};
+             Globals.GENERAL_THUMBNAIL_ROUNDNESS = 50;

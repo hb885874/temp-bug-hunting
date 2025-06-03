@@ -1,0 +1,155 @@
+--- 
++++ 
+@@ -62,7 +62,7 @@
+ }
+ </style>
+ 
+-    <script async src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/module_assets/1/177126897949/1744245517816/module_morse-header.min.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
++    <script async src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/module_assets/1/177126897949/1744245517816/module_morse-header.min.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
+ 
+ 
+     
+@@ -78,7 +78,7 @@
+ <!-- template path: developers-website-2024/templates/home.html startswith: false -->
+ 
+ 	<!-- GDPR SETTING:  developers.hubspot.com | GTM-55897XN | build #null / tld:com / subdomain: developers / domainName: hubspot-->
+-  <script defer src="https://developers.hubspot.com/wt-assets/static-files/compliance/index.js" type="text/javascript" data-gtm-id="GTM-55897XN" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
++  <script defer src="https://developers.hubspot.com/wt-assets/static-files/compliance/index.js" type="text/javascript" data-gtm-id="GTM-55897XN" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
+ 
+ 
+ 
+@@ -748,7 +748,7 @@
+ 
+   
+   
+-  <script nonce="YAqlaePuYjOk8V55JaESTw==">
++  <script nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+   class HeaderNavigation extends HTMLElement {
+     constructor() {
+       super();
+@@ -1066,7 +1066,7 @@
+     
+   </div>
+   
+-  <div class="community-banner__cta"> <!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb"><span class="hs-cta-node hs-cta-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb" id="hs-cta-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/53/2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb"><img class="hs-cta-img" id="hs-cta-img-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb" style="border-width:0px;" height="18" width="207" src="https://no-cache.hubspot.com/cta/default/53/2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb.png" alt="Join the developer community"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script><script type="text/javascript" nonce="YAqlaePuYjOk8V55JaESTw=="> hbspt.cta._relativeUrls=true;hbspt.cta.load(53, '2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code --> </div>
++  <div class="community-banner__cta"> <!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb"><span class="hs-cta-node hs-cta-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb" id="hs-cta-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/53/2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb"><img class="hs-cta-img" id="hs-cta-img-2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb" style="border-width:0px;" height="18" width="207" src="https://no-cache.hubspot.com/cta/default/53/2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb.png" alt="Join the developer community"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script><script type="text/javascript" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="> hbspt.cta._relativeUrls=true;hbspt.cta.load(53, '2a8f8bc3-9350-4fb0-9bb7-b69e6c0808fb', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code --> </div>
+   
+   <div class="community-banner__bg-dots community-banner__bg-dots--bottom" aria-hidden>
+   <svg width="1455" height="37" viewbox="-40 0 1455 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+@@ -1731,7 +1731,7 @@
+         <div class="form-banner__text">
+             <h2 id="dnd_area-module-11__heading" class="font-queens">Sign up to receive HubSpot's Developer Newsletter</h2> 
+             <p>In addition to occasional special announcements, you'll get a monthly roundup with developer updates, relevant product news, and other information that will help you grow as a developer on our platform and beyond.</p>
+-<p><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-78ba70cf-d0a0-43fb-80c3-67719618039e"><span class="hs-cta-node hs-cta-78ba70cf-d0a0-43fb-80c3-67719618039e" id="hs-cta-78ba70cf-d0a0-43fb-80c3-67719618039e"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/53/78ba70cf-d0a0-43fb-80c3-67719618039e" target="_blank" rel="noopener"><img class="hs-cta-img" id="hs-cta-img-78ba70cf-d0a0-43fb-80c3-67719618039e" style="border-width:0px;" height="18" width="204" src="https://no-cache.hubspot.com/cta/default/53/78ba70cf-d0a0-43fb-80c3-67719618039e.png" alt="Get the Developer Newsletter"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script><script type="text/javascript" nonce="YAqlaePuYjOk8V55JaESTw=="> hbspt.cta._relativeUrls=true;hbspt.cta.load(53, '78ba70cf-d0a0-43fb-80c3-67719618039e', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code --></p>
++<p><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-78ba70cf-d0a0-43fb-80c3-67719618039e"><span class="hs-cta-node hs-cta-78ba70cf-d0a0-43fb-80c3-67719618039e" id="hs-cta-78ba70cf-d0a0-43fb-80c3-67719618039e"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/53/78ba70cf-d0a0-43fb-80c3-67719618039e" target="_blank" rel="noopener"><img class="hs-cta-img" id="hs-cta-img-78ba70cf-d0a0-43fb-80c3-67719618039e" style="border-width:0px;" height="18" width="204" src="https://no-cache.hubspot.com/cta/default/53/78ba70cf-d0a0-43fb-80c3-67719618039e.png" alt="Get the Developer Newsletter"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script><script type="text/javascript" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="> hbspt.cta._relativeUrls=true;hbspt.cta.load(53, '78ba70cf-d0a0-43fb-80c3-67719618039e', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code --></p>
+         </div>
+         <div class="form-banner__form"><img class="form-banner__form-graphic" src="https://developers.hubspot.com/hs-fs/hubfs/raw_assets/public/developers-website-2024/images/form-banner-module/email.png?width=330&amp;height=330&amp;name=email.png" alt="" width="330" height="330" loading="lazy" srcset="https://developers.hubspot.com/hs-fs/hubfs/raw_assets/public/developers-website-2024/images/form-banner-module/email.png?width=165&amp;height=165&amp;name=email.png 165w, https://developers.hubspot.com/hs-fs/hubfs/raw_assets/public/developers-website-2024/images/form-banner-module/email.png?width=330&amp;height=330&amp;name=email.png 330w, https://developers.hubspot.com/hs-fs/hubfs/raw_assets/public/developers-website-2024/images/form-banner-module/email.png?width=495&amp;height=495&amp;name=email.png 495w, https://developers.hubspot.com/hs-fs/hubfs/raw_assets/public/developers-website-2024/images/form-banner-module/email.png?width=660&amp;height=660&amp;name=email.png 660w, https://developers.hubspot.com/hs-fs/hubfs/raw_assets/public/developers-website-2024/images/form-banner-module/email.png?width=825&amp;height=825&amp;name=email.png 825w, https://developers.hubspot.com/hs-fs/hubfs/raw_assets/public/developers-website-2024/images/form-banner-module/email.png?width=990&amp;height=990&amp;name=email.png 990w" sizes="(max-width: 330px) 100vw, 330px"></div>
+     </div>
+@@ -2394,20 +2394,20 @@
+     
+     
+     
+-<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177128535651/1744213840642/template_a11y-slider.min.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
++<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177128535651/1744213840642/template_a11y-slider.min.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
+ <!-- HubSpot performance collection script -->
+-<script defer src="/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+-<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177128201743/1744213835834/template_main.min.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+-<script nonce="YAqlaePuYjOk8V55JaESTw==">
++<script defer src="/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177128201743/1744213835834/template_main.min.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++<script nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+ var hsVars = hsVars || {}; hsVars['language'] = 'en';
+ </script>
+ 
+-<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+-<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/module_assets/1/177128201628/1746641297395/module_header-nav.min.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+-<script type="module" src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177126897969/1744213832750/template_popover.min.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+-<script src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177801226767/1744213854618/template_swiper-bundle.min.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+- 
+-<script nonce="YAqlaePuYjOk8V55JaESTw==">
++<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/module_assets/1/177128201628/1746641297395/module_header-nav.min.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++<script type="module" src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177126897969/1744213832750/template_popover.min.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++<script src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/template_assets/1/177801226767/1744213854618/template_swiper-bundle.min.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++ 
++<script nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+  const swiper = new Swiper('.icon-card__swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+@@ -2456,7 +2456,7 @@
+ </script>
+ 
+  
+-<script nonce="YAqlaePuYjOk8V55JaESTw==">
++<script nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+  const communitySwiper = new Swiper('.community-banner__list-wrapper', {
+     // Optional parameters
+     direction: 'horizontal',
+@@ -2505,7 +2505,7 @@
+ </script>
+ 
+  
+-<script nonce="YAqlaePuYjOk8V55JaESTw==">
++<script nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+  const contentPromotionSwiper = new Swiper('.content-promotion__scroller', {
+     // Optional parameters
+     direction: 'horizontal',
+@@ -2550,9 +2550,9 @@
+ });
+ </script>
+ 
+-<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/module_assets/1/177128201657/1744245521595/module_testimonial-slider.min.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+- 
+-<script nonce="YAqlaePuYjOk8V55JaESTw==">
++<script defer src="https://developers.hubspot.com/hs-fs/hubfs/hub_generated/module_assets/1/177128201657/1744245521595/module_testimonial-slider.min.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++ 
++<script nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+  const logoParadeSwiper = new Swiper('.js-logo-grid-swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+@@ -2610,12 +2610,12 @@
+ });
+ </script>
+ 
+-<script nonce="YAqlaePuYjOk8V55JaESTw==">
++<script nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+ window.addEventListener('load',function(){var links=document.querySelectorAll('link.hs-async-css');Array.prototype.forEach.call(links,function(l){l.setAttribute('rel','stylesheet')})});</script>
+ 
+ 
+ <!-- Start of HubSpot Analytics Code -->
+-<script type="text/javascript" nonce="YAqlaePuYjOk8V55JaESTw==">
++<script type="text/javascript" nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+ var _hsq = _hsq || [];
+ _hsq.push(["setContentType", "standard-page"]);
+ _hsq.push(["setCanonicalUrl", "https:\/\/developers.hubspot.com"]);
+@@ -2633,11 +2633,11 @@
+ }]);
+ </script>
+ 
+-<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/53.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
++<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/53.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
+ <!-- End of HubSpot Analytics Code -->
+ 
+ 
+-<script type="text/javascript" nonce="YAqlaePuYjOk8V55JaESTw==">
++<script type="text/javascript" nonce="Yk6jpI7G4UNd6B34NTUbZQ==">
+ var hsVars = {
+     render_id: "d78dd3d7-ef5d-488d-b2bc-d4d190294929",
+     ticks: 1748947963170,
+@@ -2659,11 +2659,11 @@
+ </script>
+ 
+ 
+-<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.432/js/index.js" nonce="YAqlaePuYjOk8V55JaESTw=="></script>
+-
+-
+-
+-<script src="https://js.hubspot.com/ut-js/developers-hubspot-dot-com.js" async nonce="YAqlaePuYjOk8V55JaESTw=="></script>
++<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.432/js/index.js" nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
++
++
++
++<script src="https://js.hubspot.com/ut-js/developers-hubspot-dot-com.js" async nonce="Yk6jpI7G4UNd6B34NTUbZQ=="></script>
+ 
+ 
+   

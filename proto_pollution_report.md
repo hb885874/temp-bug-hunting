@@ -1,16 +1,11 @@
-# Prototype Pollution Scan Report for https://connect.hubspot.com
+# Prototype Pollution Scan Report for https://blog.hubspot.com
 
 ## Finding 1
 **Method**: GET
-**Tested URL**: `https://connect.hubspot.com?constructor={"prototype": {"polluted": 1}}`
+**Score**: `2`
+**Risk Level**: `Low`
+**Tested URL**: `https://blog.hubspot.com?constructor={"prototype": {"polluted": 1}}`
 **Reflected**: `True` (constructor)
 **DOM Mutation**: `False`
-
-
-## Finding 2
-**Method**: POST
-**Tested URL**: `https://connect.hubspot.com`
-**Payload**: `{"constructor": {"prototype": {"polluted": 1}}}`
-**Reflected**: `True` (constructor)
-**DOM Mutation**: `False`
+**Response Diff**: `results/response_diff_get_1.diff`
 

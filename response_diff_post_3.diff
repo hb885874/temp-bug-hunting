@@ -1,0 +1,833 @@
+--- 
++++ 
+@@ -1646,7 +1646,7 @@
+ LITHIUM.Components.RENDER_URL = "/t5/util/componentrenderpage/component-id/#{component-id}?render_behavior=raw";
+ LITHIUM.Components.ORIGINAL_PAGE_NAME = 'community/Page';
+ LITHIUM.Components.ORIGINAL_PAGE_ID = 'CommunityPage';
+-LITHIUM.Components.ORIGINAL_PAGE_CONTEXT = 'MHVO0fVNUhg_gh0YJwV8sJzYM3gbQUwKvli-EikpdeKfsVJ05aZ9yXqZDYvsMbmCh7FXaDy60U8mymMtRycFpE5Oqigmtp4OdKyb2g8Ne1HeGbGoWIcKzVlFDoWMrpaiqaoZ6NHz15pvRvMGB3PHmTfJ0GuN4qsCH2qRdgLvXP2pJqGNpR1KXdYiz_RW26ez-f2Yum9c-XghfkKeiatc3G35eQ8iaPHmab6AWLVQoc93yRiRuTZ3h9Wt7zYrrAsVUXrt9J64ZMmR2KCetw2zrmrPERIkyc1wHXUUG8ouHO8.';
++LITHIUM.Components.ORIGINAL_PAGE_CONTEXT = 'V5-gZi-RCwsjp-MIJ4Ah63K2Hzx6sMdJrW7HHZM5uRvRMnfTceAvtv0WhVDG7tXQu820Eb53kg5Uo7U7ReYzKn2UaX2EFextPeTsT2qaP__fdZmCOEcHuwtcagJEdk_1IRMAWOvZpb0mqbHWC8Rh-jOdIaXv7R1NVJ4AgAcurxy15fhL4mPiKMDEf0PEldKsCPy8cdhopxoHShCcM8m8STE16OGZnh0Xy1d7MoQzhI9Gqxjd8PjpMKAFt-dXmCvMnmd7-egzV6WDFNqSBrE2M8zABOFK3eC9Ctg12AzuorE.';
+ LITHIUM.Css = {
+   "BASE_DEFERRED_IMAGE" : "lia-deferred-image",
+   "BASE_BUTTON" : "lia-button",
+@@ -2239,12 +2239,12 @@
+     <img src="/html/assets/search-icon-grey.svg?version=preview" alt="">
+     </div>
+     <div class="wrapper-search" style="display:none">
+-    <div id='lia-searchformV32_5e1d013e4c0a5b' class='SearchForm lia-search-form-wrapper lia-mode-default lia-component-common-widget-search-form'>
++    <div id='lia-searchformV32_5e1d030509b2e3' class='SearchForm lia-search-form-wrapper lia-mode-default lia-component-common-widget-search-form'>
+ 	
+ 
+ 	
+ 		<div class='lia-inline-ajax-feedback'>
+-			<div class='AjaxFeedback' id='ajaxfeedback_5e1d013e4c0a5b'></div>
++			<div class='AjaxFeedback' id='ajaxfeedback_5e1d030509b2e3'></div>
+ 			
+ 	
+ 
+@@ -2255,13 +2255,13 @@
+ 	
+ 
+ 	
+-		<div id='searchautocompletetoggle_5e1d013e4c0a5b'>	
++		<div id='searchautocompletetoggle_5e1d030509b2e3'>	
+ 	
+ 		
+ 
+ 	
+ 		<div class='lia-inline-ajax-feedback'>
+-			<div class='AjaxFeedback' id='ajaxfeedback_5e1d013e4c0a5b_0'></div>
++			<div class='AjaxFeedback' id='ajaxfeedback_5e1d030509b2e3_0'></div>
+ 			
+ 	
+ 
+@@ -2273,7 +2273,7 @@
+ 
+ 	
+ 			
+-            <form enctype='multipart/form-data' class='lia-form lia-form-inline SearchForm' action='https://community.hubspot.com/t5/community/page.searchformv32.form.form' method='post' id='form_5e1d013e4c0a5b' name='form_5e1d013e4c0a5b'><div class='t-invisible'><input value='search/contributions/page' name='t:cp' type='hidden'></input><input value='8X-P4JNfU4P06LTCSUgZtjKWnU64kqUmlbW17S5KZoeyL9Zw2jPEWRXfoZwST1FYtTt4HbyjeLFr92sn3UA8Ngl-yETsI6kIGz0fOJ19s4Q2uRz0LFzvDaEH6CtoUyu8jaxYChujzylhuA9lIaXYgVRmkB8pZ31UgSVOfkuVGRQjSmdniFcQNY2pLR0IwGn4g7I6-N51Ri2EO5bRARavyxMFRaoJYP0iPqeJelNIZdAjVQlhhz1IMH4zimWiVzsY7eQIcY2RjzJA8RLPJ5qBL--vUCk1rfVKcurFu7UOqBOtFqjNGY4EwJYVKkFNN3B2TKaL_WO6TWq0HZq-uFNS_SGS9cN20I-w7RlNwHlrDWRJicK9hPyQqj9Std-uR24lYL07gZYzi8csnz6AVeFKBdVuK8EN5N63ufCQl7izFCmh_rGZhmceekBn0Tiud38MABKCKuWAQF4NlNmwMvN4Z3wDRBWvTUm_0NzBHjcxMcYJvAn3M7gBi1YNxGj49owvy1kmsjS-6f3MZYTJpL2gwU_SfIORJiZZWN__inI7BWd5POgW8wkg2hcF8EwXQwE4G9c8mDKe72ETSMcn2UuZJ6mK5Mgcl7ocspCg8rPZ9KWqeQMEtanxtqGy3LBECU5eemYln-CRvHKpviI_wpqkKVGblZTv_TeRFgn7mBFgkpEnREHLOXon8N2gPDqVbHUsUQDCoC9lr0YwLJXzc8VR9Gpr9aCLJEGF9loMfwgFG64v5TCJhMr_H6wH1pcAcpMnzL7EkwsBvwfWn7tcrL8Q6MNYj--zVooqGU9DRCCzRPZUbGT6qBSrAZ26XU2TeqyUZc0vU9uyE8zu9T88dEiW4bLFRxIm9n8KIVdKHflU7f0FAa6wotCIQH4_HZfqnh2_4gtD87EiatufrdM7H_pVRr0xz7BvZU7XpiY6Sn_AxfGrP6Fi_iPh2INEn-iPX39lSszON304m-gUh9vykeepTJJNuKY8kLnRer3BznTqMpOZNUj4ioMIyMGRH462GS1r7zlwL4KLbIi33nbM9MMvBYeyQIjGGQGlxh8DoNw1iHcsG44mOiqYC-V37RS9s90yMxVtDqn4-tBHv68XT5k8VNXi0sIQM7InQncFuCGxfuiedi2y2lgMN3Q8eNNnZ8fqAGlNhDOYZYNiHGiiOIdpo0DjjXENnoz8sclRkWV4t7E.' name='lia-form-context' type='hidden'></input><input value='CommunityPage::searchformv32.form:' name='liaFormContentKey' type='hidden'></input><input value='yDZKQFNI0U/sd9X4pbUemqvQQZw=:H4sIAAAAAAAAALWSzUrDQBSFr4Wuigiib6DbiajdqAhFUISqweBaZibTNJpk4sxNEzc+ik8gvkQX7nwHH8CtKxfmzxJbwaTUVZhzw/nOmblP79COD+FAC6r40OAyQOWyCF0ZaMOkjtgrJgOp/NHONtER810sP9nfIkGtoCuVQ2hI+VAQpKHQqO67hEslPJcRRrUgPZaKlOOxKzx7wxIYhZtX487b+stnC5b60MnZ0junvkBY7d/QETU8GjiGlUYKnP0kRFguwEcFeAHBe02Dm0pyobWV+Wid0sbP9u7g4/G1BZCE8QWc1U3kpzapWoqZ+S+SvoMHgPQ+ypGVj/IoC2dlqHZ8CWZdV7xljUqszZa43voPYNHkFE7qGkdaqKrl1Pm7wEqmV59gcYjGkQOJP25h6jyJnOlzRv4DUURusIWhknbEsWo5K002vhzNufG1WHmDLwdzh8gDBQAA' name='t:formdata' type='hidden'></input></div>
++            <form enctype='multipart/form-data' class='lia-form lia-form-inline SearchForm' action='https://community.hubspot.com/t5/community/page.searchformv32.form.form' method='post' id='form_5e1d030509b2e3' name='form_5e1d030509b2e3'><div class='t-invisible'><input value='search/contributions/page' name='t:cp' type='hidden'></input><input value='XZPK2814t4S94xYJocaze3WjkJnt3oF32YalEScRzisnDodp9_gRuaix2nwxeMfVmhA-u8GxQj4ERsVQJLgwkgdg1K6xLdOlwBnU53pl6SH6zjn0vk_6xRqFSQYF6nHiU2TunPij2xhcJ2Jpkad1OWjnYn54Wg_UXc4gkR9KgWsIaSc-MRoxKOaB-c16i1oUKPcwC6NJUu5wlgjLyggeey5HF5_JP-cKtwnX0NjxweEnzExA9TF1fKJl5SFxxlplmrL5UAlRFsCubt-to_Qb0MVsjNd_8jQZZXuSZ3De7l1eZTXjH7b_Q81SJIjkmtNXMt1lBsTeLnBjGdnEyhuPW92gREZHSxViPQdm5yPCesO2F6qkA9eWZzN7zHRD_hvoqPu1MKzBcpiUv2Ou7MykQCfK-WZoyY_kDRWHGaeduc7PQRjMk3LXcFttzMNXp8nvNTIGyE-1B-W3BXb0tRIqm2PCxpFGURa9sWCRLUaG5SgcFZR-jTN2ezgq-ae-Fa0l7UphhtuK5qR1fNb9Mj6ncZRZmkP3c6MNCwgJczSAtAVLpqL16NjlLAV7RI6EsJx64IE9dRO9cKLS0HcWt1GCzIoyFLTrjBqggalJuCDXb2L3_roOJqJyS030om8Lr8x89GZlZfGRAvEpGJx_oLB50ZJRKyYHta54rBOMTX00Ir6jrSPGpd_4HMWX5aZ1jMQywaXPp-g_HOtGFDM8yM-fFOGicHHIfr4JrmqNbCZh1Ro7mNad-jq4uvP7AwY6zs5H8j_GhwnG0IVjGA1XM78r5HGexVSZA1b3yYpH2WXaDaU22_VtoZghf56B2eOLgJRKUo9YnqF8Pr1BQFcUZG2ZG4C563kvzOLFzjqd3WXG6tdngAfZTsaldRzPRMbyvEONCgFYLgF1L9fnjFTEmxFBUb7GcRKwV0dY5XfaxDo0ktAIJ5j9mQhSXGj8ZylGd65eEVs0roIkA1tpEmdJbszTDCgEoq5CzzJfarfQ_J-la_Olr6lTXLzq4dkNqN917Ixh_EmvbXR0jfvOa-smwZvoW0XkZm00dmFm4TZ_5araFeq-YY_y3Fcf-c6L76cQJN419RUY8r5QOe1EC7ItohpcAbGoJ4udQ0sJRP2vWxvzYqWdgc8XrczIpRi5TjIao3TuGmrcHrse0Fe-XRsUYUJOYawsjltfQC5qiYVmg3Qnfl0.' name='lia-form-context' type='hidden'></input><input value='CommunityPage::searchformv32.form:' name='liaFormContentKey' type='hidden'></input><input value='yDZKQFNI0U/sd9X4pbUemqvQQZw=:H4sIAAAAAAAAALWSzUrDQBSFr4Wuigiib6DbiajdqAhFUISqweBaZibTNJpk4sxNEzc+ik8gvkQX7nwHH8CtKxfmzxJbwaTUVZhzw/nOmblP79COD+FAC6r40OAyQOWyCF0ZaMOkjtgrJgOp/NHONtER810sP9nfIkGtoCuVQ2hI+VAQpKHQqO67hEslPJcRRrUgPZaKlOOxKzx7wxIYhZtX487b+stnC5b60MnZ0junvkBY7d/QETU8GjiGlUYKnP0kRFguwEcFeAHBe02Dm0pyobWV+Wid0sbP9u7g4/G1BZCE8QWc1U3kpzapWoqZ+S+SvoMHgPQ+ypGVj/IoC2dlqHZ8CWZdV7xljUqszZa43voPYNHkFE7qGkdaqKrl1Pm7wEqmV59gcYjGkQOJP25h6jyJnOlzRv4DUURusIWhknbEsWo5K002vhzNufG1WHmDLwdzh8gDBQAA' name='t:formdata' type='hidden'></input></div>
+ 	
+ 	
+ 
+@@ -2283,7 +2283,7 @@
+ 
+ 	
+ 		<div class='lia-inline-ajax-feedback'>
+-			<div class='AjaxFeedback' id='feedback_5e1d013e4c0a5b'></div>
++			<div class='AjaxFeedback' id='feedback_5e1d030509b2e3'></div>
+ 			
+ 	
+ 
+@@ -2301,10 +2301,10 @@
+ 
+ 
+ 	
+-	<input value='Y9ygWjIh1lgLgpM91gCFc0Ar3qsvR8AH5f8f9JA5iY0.' name='lia-action-token' type='hidden'></input>
+-	
+-	<input value='form_5e1d013e4c0a5b' id='form_UIDform_5e1d013e4c0a5b' name='form_UID' type='hidden'></input>
+-	<input value='' id='form_instance_keyform_5e1d013e4c0a5b' name='form_instance_key' type='hidden'></input>
++	<input value='jS3ZUWHXLLBT5l4CyWpVlnqjJZQlim5480UinD_gYqQ.' name='lia-action-token' type='hidden'></input>
++	
++	<input value='form_5e1d030509b2e3' id='form_UIDform_5e1d030509b2e3' name='form_UID' type='hidden'></input>
++	<input value='' id='form_instance_keyform_5e1d030509b2e3' name='form_instance_key' type='hidden'></input>
+ 	
+                 
+ 
+@@ -2314,21 +2314,21 @@
+ 
+                 <span class='lia-search-input-wrapper'>
+                     <span class='lia-search-input-field'>
+-                        <span class='lia-button-wrapper lia-button-wrapper-secondary lia-button-wrapper-searchForm-action'><input value='searchForm' name='submitContextX' type='hidden'></input><input class='lia-button lia-button-secondary lia-button-searchForm-action' value='Search' id='submitContext_5e1d013e4c0a5b' name='submitContext' type='submit'></input></span>
+-
+-                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-message' value='' id='messageSearchField_5e1d013e4c0a5b_0' name='messageSearchField' type='text'></input>
+-                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-tkb-article lia-js-hidden' value='' id='messageSearchField_5e1d013e4c0a5b_1' name='messageSearchField_0' type='text'></input>
++                        <span class='lia-button-wrapper lia-button-wrapper-secondary lia-button-wrapper-searchForm-action'><input value='searchForm' name='submitContextX' type='hidden'></input><input class='lia-button lia-button-secondary lia-button-searchForm-action' value='Search' id='submitContext_5e1d030509b2e3' name='submitContext' type='submit'></input></span>
++
++                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-message' value='' id='messageSearchField_5e1d030509b2e3_0' name='messageSearchField' type='text'></input>
++                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-tkb-article lia-js-hidden' value='' id='messageSearchField_5e1d030509b2e3_1' name='messageSearchField_0' type='text'></input>
+                         
+ 
+ 	
+-		<input ng-non-bindable='' title='Enter a user name or rank' class='lia-form-type-text UserSearchField lia-search-input-user search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a user name or rank' value='' id='userSearchField_5e1d013e4c0a5b' name='userSearchField' type='text'></input>
+-	
+-
+-	
+-
+-
+-                        <input placeholder='Enter a keyword to search within the private messages' title='Enter a search word' class='lia-form-type-text NoteSearchField lia-search-input-note search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='noteSearchField_5e1d013e4c0a5b_0' name='noteSearchField' type='text'></input>
+-						<input title='Enter a search word' class='lia-form-type-text ProductSearchField lia-search-input-product search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='productSearchField_5e1d013e4c0a5b' name='productSearchField' type='text'></input>
++		<input ng-non-bindable='' title='Enter a user name or rank' class='lia-form-type-text UserSearchField lia-search-input-user search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a user name or rank' value='' id='userSearchField_5e1d030509b2e3' name='userSearchField' type='text'></input>
++	
++
++	
++
++
++                        <input placeholder='Enter a keyword to search within the private messages' title='Enter a search word' class='lia-form-type-text NoteSearchField lia-search-input-note search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='noteSearchField_5e1d030509b2e3_0' name='noteSearchField' type='text'></input>
++						<input title='Enter a search word' class='lia-form-type-text ProductSearchField lia-search-input-product search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='productSearchField_5e1d030509b2e3' name='productSearchField' type='text'></input>
+                         <input class='lia-as-search-action-id' name='as-search-action-id' type='hidden'></input>
+                     </span>
+                 </span>
+@@ -2342,9 +2342,9 @@
+ 		
+ 			<div class='search-autocomplete-toggle-link lia-js-hidden'>
+ 				<span>
+-					<a class='lia-link-navigation auto-complete-toggle-on lia-link-ticket-post-action lia-component-search-action-enable-auto-complete' data-lia-action-token='cK_Oui0iG4Dy7XDlYTlipLvBAk457mZvygnXYOZj82c.' rel='nofollow' id='enableAutoComplete_5e1d013e4c0a5b' href='https://community.hubspot.com/t5/community/page.enableautocomplete:enableautocomplete?t:cp=action/contributions/searchactions'>Turn on suggestions</a>					
++					<a class='lia-link-navigation auto-complete-toggle-on lia-link-ticket-post-action lia-component-search-action-enable-auto-complete' data-lia-action-token='ZZsXcjLP_C_ivYrT3aug0VnetWGb5AToBuwdCwTAICg.' rel='nofollow' id='enableAutoComplete_5e1d030509b2e3' href='https://community.hubspot.com/t5/community/page.enableautocomplete:enableautocomplete?t:cp=action/contributions/searchactions'>Turn on suggestions</a>					
+ 					<span class='HelpIcon'>
+-	<a class='lia-link-navigation help-icon lia-tooltip-trigger' role='button' aria-label='Help Icon' id='link_5e1d013e4c0a5b' href='#'><span class='lia-img-icon-help lia-fa-icon lia-fa-help lia-fa' alt='Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.' aria-label='Help Icon' role='img' id='display_5e1d013e4c0a5b'></span></a><div role='alertdialog' class='lia-content lia-tooltip-pos-bottom-left lia-panel-tooltip-wrapper' id='link_5e1d013e4c0a5b_0-tooltip-element'><div class='lia-tooltip-arrow'></div><div class='lia-panel-tooltip'><div class='content'>Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.</div></div></div>
++	<a class='lia-link-navigation help-icon lia-tooltip-trigger' role='button' aria-label='Help Icon' id='link_5e1d030509b2e3' href='#'><span class='lia-img-icon-help lia-fa-icon lia-fa-help lia-fa' alt='Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.' aria-label='Help Icon' role='img' id='display_5e1d030509b2e3'></span></a><div role='alertdialog' class='lia-content lia-tooltip-pos-bottom-left lia-panel-tooltip-wrapper' id='link_5e1d030509b2e3_0-tooltip-element'><div class='lia-tooltip-arrow'></div><div class='lia-panel-tooltip'><div class='content'>Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.</div></div></div>
+ </span>
+ 				</span>
+ 			</div>
+@@ -2360,19 +2360,19 @@
+ </div>
+ 		
+ 	<div class='spell-check-showing-result'>
+-		Showing results for <span class='lia-link-navigation show-results-for-link lia-link-disabled' aria-disabled='true' id='showingResult_5e1d013e4c0a5b'></span>
++		Showing results for <span class='lia-link-navigation show-results-for-link lia-link-disabled' aria-disabled='true' id='showingResult_5e1d030509b2e3'></span>
+ 		
+ 
+ 	</div>
+ 	<div>
+ 		
+ 		<span class='spell-check-search-instead'>
+-			Search instead for <a class='lia-link-navigation search-instead-for-link' rel='nofollow' id='searchInstead_5e1d013e4c0a5b' href='#'></a>
++			Search instead for <a class='lia-link-navigation search-instead-for-link' rel='nofollow' id='searchInstead_5e1d030509b2e3' href='#'></a>
+ 		</span>
+ 
+ 	</div>
+ 	<div class='spell-check-do-you-mean lia-component-search-widget-spellcheck'>
+-		Did you mean: <a class='lia-link-navigation do-you-mean-link' rel='nofollow' id='doYouMean_5e1d013e4c0a5b' href='#'></a>
++		Did you mean: <a class='lia-link-navigation do-you-mean-link' rel='nofollow' id='doYouMean_5e1d030509b2e3' href='#'></a>
+ 	</div>
+ 
+ 	
+@@ -2405,7 +2405,7 @@
+         </ul>
+     </div> 
+  </div>            <div class="login-container">
+-<a class='lia-link-navigation login-link lia-authentication-link lia-component-users-action-login' rel='nofollow' id='loginPageV2_5e1d013f38dfd2' href='https://app.hubspot.com/khoros/integration/jwt/authenticate?referer=https%3A%2F%2Fcommunity.hubspot.com%2F'>Log in</a>            </div>
++<a class='lia-link-navigation login-link lia-authentication-link lia-component-users-action-login' rel='nofollow' id='loginPageV2_5e1d030616635b' href='https://app.hubspot.com/khoros/integration/jwt/authenticate?referer=https%3A%2F%2Fcommunity.hubspot.com%2F'>Log in</a>            </div>
+         </div>
+       </nav>  
+     </div>
+@@ -2595,12 +2595,12 @@
+ 			</ul>
+ 		</div>
+ 	</div></div>       <div class="header-search-wrapper">
+-<div id='lia-searchformV32_5e1d013f5e29fd' class='SearchForm lia-search-form-wrapper lia-mode-default lia-component-common-widget-search-form'>
++<div id='lia-searchformV32_5e1d03063d2a29' class='SearchForm lia-search-form-wrapper lia-mode-default lia-component-common-widget-search-form'>
+ 	
+ 
+ 	
+ 		<div class='lia-inline-ajax-feedback'>
+-			<div class='AjaxFeedback' id='ajaxfeedback_5e1d013f5e29fd'></div>
++			<div class='AjaxFeedback' id='ajaxfeedback_5e1d03063d2a29'></div>
+ 			
+ 	
+ 
+@@ -2611,13 +2611,13 @@
+ 	
+ 
+ 	
+-		<div id='searchautocompletetoggle_5e1d013f5e29fd'>	
++		<div id='searchautocompletetoggle_5e1d03063d2a29'>	
+ 	
+ 		
+ 
+ 	
+ 		<div class='lia-inline-ajax-feedback'>
+-			<div class='AjaxFeedback' id='ajaxfeedback_5e1d013f5e29fd_0'></div>
++			<div class='AjaxFeedback' id='ajaxfeedback_5e1d03063d2a29_0'></div>
+ 			
+ 	
+ 
+@@ -2629,7 +2629,7 @@
+ 
+ 	
+ 			
+-            <form enctype='multipart/form-data' class='lia-form lia-form-inline SearchForm' action='https://community.hubspot.com/t5/community/page.searchformv32.form.form' method='post' id='form_5e1d013f5e29fd' name='form_5e1d013f5e29fd'><div class='t-invisible'><input value='search/contributions/page' name='t:cp' type='hidden'></input><input value='-95tAqpYjpFOECYCEmd5QMgnh60TmlTvC-svLFUZ8rFel-5IEp_kZgXl-1kPN7U6364cipgbBKBbElO6GMeYcqDSLwVw4NJLr7C4ESnrL9E4yh0kny_haLo1QVE2bp6g304mUHgVNn5YARPj7zyQ_CYqgI_L-hxLkM_NBPWFtKHSErn4rb6K6iEw8rPSSlwmYbFW6r3gqYbW-9YWb7Mg3PsYktqZfP3yPaSKK1T_moc5EyOJsu6gFclT8pt4bGmUADVWbOX9zFv6hCaEAm0bnDDydc9jfay4s8uRxnSrOuWf2m-rMV9kuCYTWRIOJRDhiCD0Dr-Nnfkx38qkUACYcKqYGUcNKl1xrYwz7jzmIo75LGDMrmMbHAl78HYdOiQ4pifTKTL7b-fbHaCSSCmMYucivM4u4FkwYgDZ4l_2fGvr1mvU49CRfj_GBVPEo_NYyFbKPQldm4F5C4lyO4FGKH2xyH9thl4lOXwffcL5VfqeWIwXLHNCgHxSVwQ7sSnI0SJ4TEVjQDkPjLpBAQvDnwYZIsq9M_5xEgOyeMh92qtv8HhwjcZIafJXqjx5qYfOY9R78h9YTHGrudCht8Z9D5VGayeVGjoeNjRqXFI4EQfMa3itFBaweUQxx6rdY-NeNKt3LV_dFU7uYic-fipIj63umNWgGC9MHGicIu_IMIUVV_bKOjmQFv460M-uzVUw4fhG-F7Q3zks21LI_9VXg_kezY8t8zGBd3NvlQGcMxf1oSxnfEXIDj9yjenopapLSvIdnabLnpUcBShKoId2yNZf36BmFWrxAIQnFPpG-msNRLNeJt2vzTslJO_3REBqYhsj292XmKmx31FOWRy395A9KFvOSRhSEDz_-nWgCr1BRdUg3TuF3wxrFIwWGgj9Hl2_INAPt569W289fTsUfz21dTBr8jewYmq2b6_QDZPFJukm6_3e2eqZS-UAMPIz_TS-HREP1mqn5_zqajM1zgAH3t9gEoeckpQScOSyaovAP4CK4rfdZajWfcveIDkUt4BqY4MP1_zjBD-NjAUTGiUBLW8QsDEm9yAsColqHpaxT6uKCtM2T_Lg_ou8rTQw4i0iQIkHZvStGnlkSrI6V8JW0iylfXZyc5UEDKCUvMRfuFKEW-jNo2m1zSN6T3L3Dcmd9Vf40i2sfHOXZt752RsyhMLWiZ5ar_aU6yz43XKW7f1YBsQj4y-QAr89aqgz1JgsqbAj_vHhikoCEvXybpZ5YBu74tid-DSkXtZSkwk.' name='lia-form-context' type='hidden'></input><input value='CommunityPage::searchformv32.form:' name='liaFormContentKey' type='hidden'></input><input value='5DI9GWMef1Esyz275vuiiOExwpQ=:H4sIAAAAAAAAALVSTU7CQBR+krAixkj0BrptjcpCMSbERGKCSmxcm+kwlGrbqTOvFDYexRMYL8HCnXfwAG5dubDtFKxgYgu4mrzvm3w/M+/pHcphHQ4kI4L2dMo9FLYZoM09qbeJxQ4V0+XC7e/tamqyBPEChwgbh1JAjQtLIz6hPaYh8ZlEMaxplAvm2KZmEsm0hhmBhOKpzZzOlsEw8LevR5W3zZfPEqy0oJIYc+eCuAyh2rolfaI7xLN0I8rjWfWBj7CuzJvf5osmbxRN3hacMimNwHRtKSOr0XNnv/vx+FoCGPjhMRzljhNLYHrEt9kA5T08ACCsKvREoYuqxqLl8BLO84q4UcMITcG49y/QOGs1pYyESl5p6V6qwRW086rinVmoxMZsiZud/zBUTc6gmVc4kExkJafmcYG1GM9+wfIsCkf2OP54hal5EjnG54z8h0XhjfcF7wQUs5Kz0GTjU2rOjc/llTT4Au07pDOcBQAA' name='t:formdata' type='hidden'></input></div>
++            <form enctype='multipart/form-data' class='lia-form lia-form-inline SearchForm' action='https://community.hubspot.com/t5/community/page.searchformv32.form.form' method='post' id='form_5e1d03063d2a29' name='form_5e1d03063d2a29'><div class='t-invisible'><input value='search/contributions/page' name='t:cp' type='hidden'></input><input value='_brRxeNi659_eAAu6hOqedja0XkIDXcd9KCN5dKynxNsJekKuwNHZD36nOuNUpTmS_V9jx86y0C82ytFiUjFBOu___HkEdKsgrQVM-ZDznjItBU5B0-9He5QQ0ejRFXDzH4x5iXqi2HXN2b689VrD0078lXAlWFaVH-cJXB6OJwi5FYvZUJiE3uSAupmGiJpLB40Iq_RQIQlUCPuKNsTBb3e9pntPrkmtsLs3EJAXXH0b9P33tXersfmEKCCSk1yp4GdCjH7gvYWPti0tSdrTplWwssdgEsnenF00yEYFhu03k3hh9X_pNb_rsodCl-Vr8yUjXN2hQjmrGLpm_1NEde3E8aCMd2tT4r9LiQ79wh_o_ylexk3o10HDbZhWMCFM-jKh12IQ3ZAX-R6FuLqxSrgTV4Abn5Ra8DWX5cRGQib6OrVvFW4-WtaqpjSpbSVpft7uUTUjk46i6VHnqH_JzdiKecdKPz54GYC6RaDABwzJMxxPZRe5pC_UkFNWPPetZryBTUXKENzVZOio_1mTQRcyb4H7kVox1QCb4I6e-FqsD_MhSydMCaKrF9eY2wM6bnmCmxBeMrHOFoswsJkMkxtBHB585N4Jj8HMELPqkr4IzfebGvqRW-t8xV7qEemxOgSaJqrMFLP-Nte0W4vSInvceQXAGo7397kId9COPTUddL2DxCgu998dx3hLpOebcL38MYVFyBaS4faJPr-S3OI6Gled1ZWm-ABCz39VcltTTJ3sOPwzLWtLni1e17QTW4SuUh-jrHg-xmpXpVb6PBQBijdGkUujD-7IS7xat7My-DZoWp20_7cqFNLUG-UTtT5a9qOowDf1sbR-BAJOdL-WvzcllS5YEwG0fed9a2M5vc4Hlkt2fyQnE55ekzJMwRalEjnrvb2etbXEK6nyzfXkpCR3_KiynNJTH6EcztrUODagMB69WOVgZYwbwbUB9JTTTzzQBQDfNc0kGm7UZT9nt_M5pFt9pAaLaFHPws4Ad89uw9t4U1FF8KwrawomLpFYTTmBiaOqSS0He2KsqJzfAKCgYhQyULP6SQjg1-bxAvG6MXkNxmlFXmuCjmUnpexyndYou4AoqaJgo0syvDXVdISxekhPQ6eemrl5Av5Xiqbaw15cM_cbqCJGkiOMLzzmiRx2XIcFLFBIJnBE9Of7xyOV-x-NGtn-sDrp9RLENibHwMKQXB4XVNehWdFEnYFFXp8EuBIeDOKMFbcqfNDmX_mTwxIrnshhfwTyNE.' name='lia-form-context' type='hidden'></input><input value='CommunityPage::searchformv32.form:' name='liaFormContentKey' type='hidden'></input><input value='5DI9GWMef1Esyz275vuiiOExwpQ=:H4sIAAAAAAAAALVSTU7CQBR+krAixkj0BrptjcpCMSbERGKCSmxcm+kwlGrbqTOvFDYexRMYL8HCnXfwAG5dubDtFKxgYgu4mrzvm3w/M+/pHcphHQ4kI4L2dMo9FLYZoM09qbeJxQ4V0+XC7e/tamqyBPEChwgbh1JAjQtLIz6hPaYh8ZlEMaxplAvm2KZmEsm0hhmBhOKpzZzOlsEw8LevR5W3zZfPEqy0oJIYc+eCuAyh2rolfaI7xLN0I8rjWfWBj7CuzJvf5osmbxRN3hacMimNwHRtKSOr0XNnv/vx+FoCGPjhMRzljhNLYHrEt9kA5T08ACCsKvREoYuqxqLl8BLO84q4UcMITcG49y/QOGs1pYyESl5p6V6qwRW086rinVmoxMZsiZud/zBUTc6gmVc4kExkJafmcYG1GM9+wfIsCkf2OP54hal5EjnG54z8h0XhjfcF7wQUs5Kz0GTjU2rOjc/llTT4Au07pDOcBQAA' name='t:formdata' type='hidden'></input></div>
+ 	
+ 	
+ 
+@@ -2639,7 +2639,7 @@
+ 
+ 	
+ 		<div class='lia-inline-ajax-feedback'>
+-			<div class='AjaxFeedback' id='feedback_5e1d013f5e29fd'></div>
++			<div class='AjaxFeedback' id='feedback_5e1d03063d2a29'></div>
+ 			
+ 	
+ 
+@@ -2657,38 +2657,38 @@
+ 
+ 
+ 	
+-	<input value='gdcdKPGXxlnHGlWOLcthHD1NSsyKJ6R8N46hal1NMlo.' name='lia-action-token' type='hidden'></input>
+-	
+-	<input value='form_5e1d013f5e29fd' id='form_UIDform_5e1d013f5e29fd' name='form_UID' type='hidden'></input>
+-	<input value='' id='form_instance_keyform_5e1d013f5e29fd' name='form_instance_key' type='hidden'></input>
++	<input value='0Y9ZBZfLi-lDeLqitxP3ijBDNlhKCnsKpUe7zHeGulM.' name='lia-action-token' type='hidden'></input>
++	
++	<input value='form_5e1d03063d2a29' id='form_UIDform_5e1d03063d2a29' name='form_UID' type='hidden'></input>
++	<input value='' id='form_instance_keyform_5e1d03063d2a29' name='form_instance_key' type='hidden'></input>
+ 	
+                 
+ 
+                 
+                     
+                         <span class='lia-search-granularity-wrapper'>
+-                            <select title='Search Granularity' class='lia-search-form-granularity search-granularity' aria-label='Search Granularity' id='searchGranularity_5e1d013f5e29fd' name='searchGranularity'><option title='All Results' selected='selected' value='mjmao93648|community'>All Results</option><option title='Users' value='user|user'>Users</option></select>
++                            <select title='Search Granularity' class='lia-search-form-granularity search-granularity' aria-label='Search Granularity' id='searchGranularity_5e1d03063d2a29' name='searchGranularity'><option title='All Results' selected='selected' value='mjmao93648|community'>All Results</option><option title='Users' value='user|user'>Users</option></select>
+                         </span>
+                     
+                 
+ 
+                 <span class='lia-search-input-wrapper'>
+                     <span class='lia-search-input-field'>
+-                        <span class='lia-button-wrapper lia-button-wrapper-secondary lia-button-wrapper-searchForm-action'><input value='searchForm' name='submitContextX' type='hidden'></input><input class='lia-button lia-button-secondary lia-button-searchForm-action' value='Search' id='submitContext_5e1d013f5e29fd' name='submitContext' type='submit'></input></span>
+-
+-                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-message' value='' id='messageSearchField_5e1d013f5e29fd_0' name='messageSearchField' type='text'></input>
+-                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-tkb-article lia-js-hidden' value='' id='messageSearchField_5e1d013f5e29fd_1' name='messageSearchField_0' type='text'></input>
++                        <span class='lia-button-wrapper lia-button-wrapper-secondary lia-button-wrapper-searchForm-action'><input value='searchForm' name='submitContextX' type='hidden'></input><input class='lia-button lia-button-secondary lia-button-searchForm-action' value='Search' id='submitContext_5e1d03063d2a29' name='submitContext' type='submit'></input></span>
++
++                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-message' value='' id='messageSearchField_5e1d03063d2a29_0' name='messageSearchField' type='text'></input>
++                        <input placeholder='Search the Community' aria-label='Search' title='Search' class='lia-form-type-text lia-autocomplete-input search-input lia-search-input-tkb-article lia-js-hidden' value='' id='messageSearchField_5e1d03063d2a29_1' name='messageSearchField_0' type='text'></input>
+                         
+ 
+ 	
+-		<input ng-non-bindable='' title='Enter a user name or rank' class='lia-form-type-text UserSearchField lia-search-input-user search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a user name or rank' value='' id='userSearchField_5e1d013f5e29fd' name='userSearchField' type='text'></input>
+-	
+-
+-	
+-
+-
+-                        <input placeholder='Enter a keyword to search within the private messages' title='Enter a search word' class='lia-form-type-text NoteSearchField lia-search-input-note search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='noteSearchField_5e1d013f5e29fd_0' name='noteSearchField' type='text'></input>
+-						<input title='Enter a search word' class='lia-form-type-text ProductSearchField lia-search-input-product search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='productSearchField_5e1d013f5e29fd' name='productSearchField' type='text'></input>
++		<input ng-non-bindable='' title='Enter a user name or rank' class='lia-form-type-text UserSearchField lia-search-input-user search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a user name or rank' value='' id='userSearchField_5e1d03063d2a29' name='userSearchField' type='text'></input>
++	
++
++	
++
++
++                        <input placeholder='Enter a keyword to search within the private messages' title='Enter a search word' class='lia-form-type-text NoteSearchField lia-search-input-note search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='noteSearchField_5e1d03063d2a29_0' name='noteSearchField' type='text'></input>
++						<input title='Enter a search word' class='lia-form-type-text ProductSearchField lia-search-input-product search-input lia-js-hidden lia-autocomplete-input' aria-label='Enter a search word' value='' id='productSearchField_5e1d03063d2a29' name='productSearchField' type='text'></input>
+                         <input class='lia-as-search-action-id' name='as-search-action-id' type='hidden'></input>
+                     </span>
+                 </span>
+@@ -2702,9 +2702,9 @@
+ 		
+ 			<div class='search-autocomplete-toggle-link lia-js-hidden'>
+ 				<span>
+-					<a class='lia-link-navigation auto-complete-toggle-on lia-link-ticket-post-action lia-component-search-action-enable-auto-complete' data-lia-action-token='9rLEc7wIwPsP4oDGIGF1fFtuICAcorf_tY6QE5JdXoE.' rel='nofollow' id='enableAutoComplete_5e1d013f5e29fd' href='https://community.hubspot.com/t5/community/page.enableautocomplete:enableautocomplete?t:cp=action/contributions/searchactions'>Turn on suggestions</a>					
++					<a class='lia-link-navigation auto-complete-toggle-on lia-link-ticket-post-action lia-component-search-action-enable-auto-complete' data-lia-action-token='3-Q2YMy0nhAQ9RK7DxXufDcC0swltOvWiJVgztfXBkY.' rel='nofollow' id='enableAutoComplete_5e1d03063d2a29' href='https://community.hubspot.com/t5/community/page.enableautocomplete:enableautocomplete?t:cp=action/contributions/searchactions'>Turn on suggestions</a>					
+ 					<span class='HelpIcon'>
+-	<a class='lia-link-navigation help-icon lia-tooltip-trigger' role='button' aria-label='Help Icon' id='link_5e1d013f5e29fd' href='#'><span class='lia-img-icon-help lia-fa-icon lia-fa-help lia-fa' alt='Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.' aria-label='Help Icon' role='img' id='display_5e1d013f5e29fd'></span></a><div role='alertdialog' class='lia-content lia-tooltip-pos-bottom-left lia-panel-tooltip-wrapper' id='link_5e1d013f5e29fd_0-tooltip-element'><div class='lia-tooltip-arrow'></div><div class='lia-panel-tooltip'><div class='content'>Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.</div></div></div>
++	<a class='lia-link-navigation help-icon lia-tooltip-trigger' role='button' aria-label='Help Icon' id='link_5e1d03063d2a29' href='#'><span class='lia-img-icon-help lia-fa-icon lia-fa-help lia-fa' alt='Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.' aria-label='Help Icon' role='img' id='display_5e1d03063d2a29'></span></a><div role='alertdialog' class='lia-content lia-tooltip-pos-bottom-left lia-panel-tooltip-wrapper' id='link_5e1d03063d2a29_0-tooltip-element'><div class='lia-tooltip-arrow'></div><div class='lia-panel-tooltip'><div class='content'>Auto-suggest helps you quickly narrow down your search results by suggesting possible matches as you type.</div></div></div>
+ </span>
+ 				</span>
+ 			</div>
+@@ -2720,19 +2720,19 @@
+ </div>
+ 		
+ 	<div class='spell-check-showing-result'>
+-		Showing results for <span class='lia-link-navigation show-results-for-link lia-link-disabled' aria-disabled='true' id='showingResult_5e1d013f5e29fd'></span>
++		Showing results for <span class='lia-link-navigation show-results-for-link lia-link-disabled' aria-disabled='true' id='showingResult_5e1d03063d2a29'></span>
+ 		
+ 
+ 	</div>
+ 	<div>
+ 		
+ 		<span class='spell-check-search-instead'>
+-			Search instead for <a class='lia-link-navigation search-instead-for-link' rel='nofollow' id='searchInstead_5e1d013f5e29fd' href='#'></a>
++			Search instead for <a class='lia-link-navigation search-instead-for-link' rel='nofollow' id='searchInstead_5e1d03063d2a29' href='#'></a>
+ 		</span>
+ 
+ 	</div>
+ 	<div class='spell-check-do-you-mean lia-component-search-widget-spellcheck'>
+-		Did you mean: <a class='lia-link-navigation do-you-mean-link' rel='nofollow' id='doYouMean_5e1d013f5e29fd' href='#'></a>
++		Did you mean: <a class='lia-link-navigation do-you-mean-link' rel='nofollow' id='doYouMean_5e1d03063d2a29' href='#'></a>
+ 	</div>
+ 
+ 	
+@@ -2759,7 +2759,7 @@
+     </div> 
+  </div> 
+   <div class="login-container">
+-<a class='lia-link-navigation login-link lia-authentication-link lia-component-users-action-login' rel='nofollow' id='loginPageV2_5e1d013ffc9e2a' href='https://app.hubspot.com/khoros/integration/jwt/authenticate?referer=https%3A%2F%2Fcommunity.hubspot.com%2F'>Log in</a>    <a href="https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=https://community.hubspot.com&hubs_signup-community-nav" class="btn btn-sm button-tertiary get-hubspot">Get started free</a>
++<a class='lia-link-navigation login-link lia-authentication-link lia-component-users-action-login' rel='nofollow' id='loginPageV2_5e1d0306fb791c' href='https://app.hubspot.com/khoros/integration/jwt/authenticate?referer=https%3A%2F%2Fcommunity.hubspot.com%2F'>Log in</a>    <a href="https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=https://community.hubspot.com&hubs_signup-community-nav" class="btn btn-sm button-tertiary get-hubspot">Get started free</a>
+   </div>       </div>
+      </nav>
+    </div>
+@@ -3147,7 +3147,7 @@
+                         <li class="nav-dropdown-item">
+                         </li>
+                         <li class="nav-dropdown-item">
+-                            <a href="https://community.hubspot.com/t5/community/page.logoutpage?t:cp=authentication/contributions/unticketedauthenticationactions&dest_url=https%3A%2F%2Fcommunity.hubspot.com%2F&lia-action-token=7ywZ_MJDFf_KJbIaqQ5oSKQHha1qM6_4_NYYR9CXaO0.&lia-action-token-id=logoff" class="nav-dropdown-link nav-account-sign-out">
++                            <a href="https://community.hubspot.com/t5/community/page.logoutpage?t:cp=authentication/contributions/unticketedauthenticationactions&dest_url=https%3A%2F%2Fcommunity.hubspot.com%2F&lia-action-token=BxHH_Z3jRrJfSjtxPFABMkkCRuueHb2QxINruJt8WlM.&lia-action-token-id=logoff" class="nav-dropdown-link nav-account-sign-out">
+                             Sign out
+                             </a>
+                         </li>
+@@ -4317,16 +4317,16 @@
+ 
+ 	
+ 		<div class="UserList lia-component-users-widget-user-list">
+-	<span id="user-listuserList_5e1d01501f6d84"> </span>
+-	<div class="t-data-grid" id="grid_5e1d01501f6d84">
++	<span id="user-listuserList_5e1d03162cc03e"> </span>
++	<div class="t-data-grid" id="grid_5e1d03162cc03e">
+ 
+ 	
+ 
+ 	
+ 
+ 	<table role="presentation" class="lia-list-slim">
+-        <thead class="lia-table-head" id="columns_5e1d01501f6d84"><tr><th scope="col" class="userColumn lia-data-cell-primary lia-data-cell-text t-first">
+-			<span class="lia-view-filter lia-link-disabled" aria-disabled="true" id="link_5e1d01501f6d84">User</span>
++        <thead class="lia-table-head" id="columns_5e1d03162cc03e"><tr><th scope="col" class="userColumn lia-data-cell-primary lia-data-cell-text t-first">
++			<span class="lia-view-filter lia-link-disabled" aria-disabled="true" id="link_5e1d03162cc03e">User</span>
+ 		</th><th scope="col" class="kudosCountColumn lia-data-cell-tertiary lia-data-cell-integer t-last">
+ 			Count
+ 		</th></tr></thead>
+@@ -4346,7 +4346,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84" href="/t5/user/viewprofilepage/user-id/111325"><img class="lia-user-avatar-message" title="karstenkoehler" alt="karstenkoehler" id="display_5e1d01501f6d84" src="/t5/image/serverpage/image-id/94937i541C6229094CA9C4/image-dimensions/38x38/image-coordinates/0%2C0%2C400%2C400?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e" href="/t5/user/viewprofilepage/user-id/111325"><img class="lia-user-avatar-message" title="karstenkoehler" alt="karstenkoehler" id="display_5e1d03162cc03e" src="/t5/image/serverpage/image-id/94937i541C6229094CA9C4/image-dimensions/38x38/image-coordinates/0%2C0%2C400%2C400?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -4368,10 +4368,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of karstenkoehler" itemprop="url" id="link_5e1d01501f6d84_0" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/111325"><span class="">karstenkoehler</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Hall of Famer | Partner" alt="Hall of Famer | Partner" id="display_0_5e1d01501f6d84" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/partner-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of karstenkoehler" itemprop="url" id="link_5e1d03162cc03e_0" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/111325"><span class="">karstenkoehler</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Hall of Famer | Partner" alt="Hall of Famer | Partner" id="display_0_5e1d03162cc03e" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/partner-color.svg"/>
+ 		
+ 		
+ 		
+@@ -4431,7 +4431,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84_0" href="/t5/user/viewprofilepage/user-id/141"><img class="lia-user-avatar-message" title="TomM2" alt="TomM2" id="display_5e1d01501f6d84_0" src="/t5/image/serverpage/image-id/142818i0C477CD526B9D548/image-dimensions/38x38/image-coordinates/0%2C252%2C1512%2C1764?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e_0" href="/t5/user/viewprofilepage/user-id/141"><img class="lia-user-avatar-message" title="TomM2" alt="TomM2" id="display_5e1d03162cc03e_0" src="/t5/image/serverpage/image-id/142818i0C477CD526B9D548/image-dimensions/38x38/image-coordinates/0%2C252%2C1512%2C1764?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -4453,10 +4453,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of TomM2" itemprop="url" id="link_5e1d01501f6d84_1" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/141"><span class="">TomM2</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Thought Leader | Platinum Partner" alt="Thought Leader | Platinum Partner" id="display_0_5e1d01501f6d84_0" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/platinum-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of TomM2" itemprop="url" id="link_5e1d03162cc03e_1" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/141"><span class="">TomM2</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Thought Leader | Platinum Partner" alt="Thought Leader | Platinum Partner" id="display_0_5e1d03162cc03e_0" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/platinum-color.svg"/>
+ 		
+ 		
+ 		
+@@ -4516,7 +4516,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84_1" href="/t5/user/viewprofilepage/user-id/610147"><img class="lia-user-avatar-message" title="Jigar_Thakker" alt="Jigar_Thakker" id="display_5e1d01501f6d84_1" src="/t5/image/serverpage/image-id/97387i2D5AA85FF1ED614F/image-dimensions/38x38/image-coordinates/0%2C0%2C800%2C800?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e_1" href="/t5/user/viewprofilepage/user-id/610147"><img class="lia-user-avatar-message" title="Jigar_Thakker" alt="Jigar_Thakker" id="display_5e1d03162cc03e_1" src="/t5/image/serverpage/image-id/97387i2D5AA85FF1ED614F/image-dimensions/38x38/image-coordinates/0%2C0%2C800%2C800?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -4538,10 +4538,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Jigar_Thakker" itemprop="url" id="link_5e1d01501f6d84_2" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/610147"><span class="">Jigar_Thakker</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Recognized Expert | Diamond Partner" alt="Recognized Expert | Diamond Partner" id="display_0_5e1d01501f6d84_1" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/diamond-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Jigar_Thakker" itemprop="url" id="link_5e1d03162cc03e_2" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/610147"><span class="">Jigar_Thakker</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Recognized Expert | Diamond Partner" alt="Recognized Expert | Diamond Partner" id="display_0_5e1d03162cc03e_1" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/diamond-color.svg"/>
+ 		
+ 		
+ 		
+@@ -4601,7 +4601,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84_2" href="/t5/user/viewprofilepage/user-id/454868"><img class="lia-user-avatar-message" title="GTownsend" alt="GTownsend" id="display_5e1d01501f6d84_2" src="https://community.hubspot.com/t5/image/serverpage/avatar-name/Avatar-Hubspot/avatar-theme/candy/avatar-collection/1_Hubspot/avatar-display-size/profile/version/2?xdesc=1.0"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e_2" href="/t5/user/viewprofilepage/user-id/454868"><img class="lia-user-avatar-message" title="GTownsend" alt="GTownsend" id="display_5e1d03162cc03e_2" src="https://community.hubspot.com/t5/image/serverpage/avatar-name/Avatar-Hubspot/avatar-theme/candy/avatar-collection/1_Hubspot/avatar-display-size/profile/version/2?xdesc=1.0"/>
+ 					
+ 				</a>
+ 				
+@@ -4623,7 +4623,7 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of GTownsend" itemprop="url" id="link_5e1d01501f6d84_3" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/454868"><span class="">GTownsend</span></a>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of GTownsend" itemprop="url" id="link_5e1d03162cc03e_3" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/454868"><span class="">GTownsend</span></a>
+ 		
+ 		
+ 		
+@@ -4686,7 +4686,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84_3" href="/t5/user/viewprofilepage/user-id/601366"><img class="lia-user-avatar-message" title="sylvain_tirreau" alt="sylvain_tirreau" id="display_5e1d01501f6d84_3" src="/t5/image/serverpage/image-id/95026i04FD668383B6D251/image-dimensions/38x38/image-coordinates/0%2C0%2C612%2C612?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e_3" href="/t5/user/viewprofilepage/user-id/601366"><img class="lia-user-avatar-message" title="sylvain_tirreau" alt="sylvain_tirreau" id="display_5e1d03162cc03e_3" src="/t5/image/serverpage/image-id/95026i04FD668383B6D251/image-dimensions/38x38/image-coordinates/0%2C0%2C612%2C612?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -4708,7 +4708,7 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of sylvain_tirreau" itemprop="url" id="link_5e1d01501f6d84_4" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/601366"><span class="">sylvain_tirreau</span></a>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of sylvain_tirreau" itemprop="url" id="link_5e1d03162cc03e_4" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/601366"><span class="">sylvain_tirreau</span></a>
+ 		
+ 		
+ 		
+@@ -4771,7 +4771,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84_4" href="/t5/user/viewprofilepage/user-id/945873"><img class="lia-user-avatar-message" title="SophieAnwar" alt="SophieAnwar" id="display_5e1d01501f6d84_4" src="https://community.hubspot.com/t5/image/serverpage/avatar-name/Avatar-Hubspot/avatar-theme/candy/avatar-collection/1_Hubspot/avatar-display-size/profile/version/2?xdesc=1.0"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e_4" href="/t5/user/viewprofilepage/user-id/945873"><img class="lia-user-avatar-message" title="SophieAnwar" alt="SophieAnwar" id="display_5e1d03162cc03e_4" src="https://community.hubspot.com/t5/image/serverpage/avatar-name/Avatar-Hubspot/avatar-theme/candy/avatar-collection/1_Hubspot/avatar-display-size/profile/version/2?xdesc=1.0"/>
+ 					
+ 				</a>
+ 				
+@@ -4793,7 +4793,7 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of SophieAnwar" itemprop="url" id="link_5e1d01501f6d84_5" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/945873"><span class="">SophieAnwar</span></a>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of SophieAnwar" itemprop="url" id="link_5e1d03162cc03e_5" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/945873"><span class="">SophieAnwar</span></a>
+ 		
+ 		
+ 		
+@@ -4856,7 +4856,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84_5" href="/t5/user/viewprofilepage/user-id/449550"><img class="lia-user-avatar-message" title="JWalkerdine" alt="JWalkerdine" id="display_5e1d01501f6d84_5" src="https://community.hubspot.com/t5/image/serverpage/avatar-name/Avatar-Hubspot/avatar-theme/candy/avatar-collection/1_Hubspot/avatar-display-size/profile/version/2?xdesc=1.0"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e_5" href="/t5/user/viewprofilepage/user-id/449550"><img class="lia-user-avatar-message" title="JWalkerdine" alt="JWalkerdine" id="display_5e1d03162cc03e_5" src="https://community.hubspot.com/t5/image/serverpage/avatar-name/Avatar-Hubspot/avatar-theme/candy/avatar-collection/1_Hubspot/avatar-display-size/profile/version/2?xdesc=1.0"/>
+ 					
+ 				</a>
+ 				
+@@ -4878,7 +4878,7 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of JWalkerdine" itemprop="url" id="link_5e1d01501f6d84_6" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/449550"><span class="">JWalkerdine</span></a>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of JWalkerdine" itemprop="url" id="link_5e1d03162cc03e_6" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/449550"><span class="">JWalkerdine</span></a>
+ 		
+ 		
+ 		
+@@ -4941,7 +4941,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d01501f6d84_6" href="/t5/user/viewprofilepage/user-id/246587"><img class="lia-user-avatar-message" title="LJenkins8" alt="LJenkins8" id="display_5e1d01501f6d84_6" src="/t5/image/serverpage/avatar-name/bridge/avatar-theme/candy/avatar-collection/architecture/avatar-display-size/message/version/2?xdesc=1.0"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d03162cc03e_6" href="/t5/user/viewprofilepage/user-id/246587"><img class="lia-user-avatar-message" title="LJenkins8" alt="LJenkins8" id="display_5e1d03162cc03e_6" src="/t5/image/serverpage/avatar-name/bridge/avatar-theme/candy/avatar-collection/architecture/avatar-display-size/message/version/2?xdesc=1.0"/>
+ 					
+ 				</a>
+ 				
+@@ -4963,7 +4963,7 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of LJenkins8" itemprop="url" id="link_5e1d01501f6d84_7" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/246587"><span class="">LJenkins8</span></a>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of LJenkins8" itemprop="url" id="link_5e1d03162cc03e_7" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/246587"><span class="">LJenkins8</span></a>
+ 		
+ 		
+ 		
+@@ -5025,7 +5025,7 @@
+ 	
+ </div>
+ 	
+-	<div class="lia-view-all"><a class="lia-link-navigation view-all-link" id="link_5e1d01501f6d84_8" href="/t5/forums/kudosleaderboardpage/timerange/one_week/page/1/tab/authors">View All</a></div>
++	<div class="lia-view-all"><a class="lia-link-navigation view-all-link" id="link_5e1d03162cc03e_8" href="/t5/forums/kudosleaderboardpage/timerange/one_week/page/1/tab/authors">View All</a></div>
+ 
+ </div></div></div></div><div class="lia-decoration-border-bottom"><div> </div></div></div></div><div class="lia-panel lia-panel-standard AcceptedSolutionsLeaderboardTaplet Chrome lia-component-solutions-widget-accepted-solutions-leaderboard-taplet"><div class="lia-decoration-border"><div class="lia-decoration-border-top"><div> </div></div><div class="lia-decoration-border-content"><div><div class="lia-panel-heading-bar-wrapper"><div class="lia-panel-heading-bar"><span aria-level="3" role="heading" class="lia-panel-heading-bar-title">Top Solution Authors</span></div></div><div class="lia-panel-content-wrapper"><div class="lia-panel-content">
+ 
+@@ -5037,16 +5037,16 @@
+ 
+ 	
+ 		<div class="UserList lia-component-users-widget-user-list">
+-	<span id="user-listuserList_5e1d0151eeac9e"> </span>
+-	<div class="t-data-grid" id="grid_5e1d0151eeac9e">
++	<span id="user-listuserList_5e1d0317715d04"> </span>
++	<div class="t-data-grid" id="grid_5e1d0317715d04">
+ 
+ 	
+ 
+ 	
+ 
+ 	<table role="presentation" class="lia-list-slim">
+-        <thead class="lia-table-head" id="columns_5e1d0151eeac9e"><tr><th scope="col" class="userColumn lia-data-cell-primary lia-data-cell-text t-first">
+-			<span class="lia-view-filter lia-link-disabled" aria-disabled="true" id="link_5e1d0151eeac9e">User</span>
++        <thead class="lia-table-head" id="columns_5e1d0317715d04"><tr><th scope="col" class="userColumn lia-data-cell-primary lia-data-cell-text t-first">
++			<span class="lia-view-filter lia-link-disabled" aria-disabled="true" id="link_5e1d0317715d04">User</span>
+ 		</th><th scope="col" class="acceptedSolutionsCountColumn lia-data-cell-tertiary lia-data-cell-integer t-last">
+ 			Solutions
+ 		</th></tr></thead>
+@@ -5066,7 +5066,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e" href="/t5/user/viewprofilepage/user-id/111325"><img class="lia-user-avatar-message" title="karstenkoehler" alt="karstenkoehler" id="display_5e1d0151eeac9e" src="/t5/image/serverpage/image-id/94937i541C6229094CA9C4/image-dimensions/38x38/image-coordinates/0%2C0%2C400%2C400?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04" href="/t5/user/viewprofilepage/user-id/111325"><img class="lia-user-avatar-message" title="karstenkoehler" alt="karstenkoehler" id="display_5e1d0317715d04" src="/t5/image/serverpage/image-id/94937i541C6229094CA9C4/image-dimensions/38x38/image-coordinates/0%2C0%2C400%2C400?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -5088,10 +5088,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of karstenkoehler" itemprop="url" id="link_5e1d0151eeac9e_0" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/111325"><span class="">karstenkoehler</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Hall of Famer | Partner" alt="Hall of Famer | Partner" id="display_0_5e1d0151eeac9e" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/partner-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of karstenkoehler" itemprop="url" id="link_5e1d0317715d04_0" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/111325"><span class="">karstenkoehler</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Hall of Famer | Partner" alt="Hall of Famer | Partner" id="display_0_5e1d0317715d04" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/partner-color.svg"/>
+ 		
+ 		
+ 		
+@@ -5151,7 +5151,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e_0" href="/t5/user/viewprofilepage/user-id/73173"><img class="lia-user-avatar-message" title="franksteiner79" alt="franksteiner79" id="display_5e1d0151eeac9e_0" src="/t5/image/serverpage/image-id/17243i5D1F32478A522B19/image-dimensions/38x38/image-coordinates/320%2C0%2C1600%2C1280?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04_0" href="/t5/user/viewprofilepage/user-id/73173"><img class="lia-user-avatar-message" title="franksteiner79" alt="franksteiner79" id="display_5e1d0317715d04_0" src="/t5/image/serverpage/image-id/17243i5D1F32478A522B19/image-dimensions/38x38/image-coordinates/320%2C0%2C1600%2C1280?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -5173,7 +5173,7 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of franksteiner79" itemprop="url" id="link_5e1d0151eeac9e_1" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/73173"><span class="">franksteiner79</span></a>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of franksteiner79" itemprop="url" id="link_5e1d0317715d04_1" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/73173"><span class="">franksteiner79</span></a>
+ 		
+ 		
+ 		
+@@ -5236,7 +5236,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e_1" href="/t5/user/viewprofilepage/user-id/2062"><img class="lia-user-avatar-message" title="Josh" alt="Josh" id="display_5e1d0151eeac9e_1" src="/t5/image/serverpage/image-id/33700iE12B3A1E02232C5C/image-dimensions/38x38?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04_1" href="/t5/user/viewprofilepage/user-id/2062"><img class="lia-user-avatar-message" title="Josh" alt="Josh" id="display_5e1d0317715d04_1" src="/t5/image/serverpage/image-id/33700iE12B3A1E02232C5C/image-dimensions/38x38?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -5258,10 +5258,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Josh" itemprop="url" id="link_5e1d0151eeac9e_2" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/2062"><span class="">Josh</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Recognized Expert | Diamond Partner" alt="Recognized Expert | Diamond Partner" id="display_0_5e1d0151eeac9e_0" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/diamond-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Josh" itemprop="url" id="link_5e1d0317715d04_2" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/2062"><span class="">Josh</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Recognized Expert | Diamond Partner" alt="Recognized Expert | Diamond Partner" id="display_0_5e1d0317715d04_0" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/diamond-color.svg"/>
+ 		
+ 		
+ 		
+@@ -5321,7 +5321,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e_2" href="/t5/user/viewprofilepage/user-id/17186"><img class="lia-user-avatar-message" title="Anton" alt="Anton" id="display_5e1d0151eeac9e_2" src="/t5/image/serverpage/image-id/124062i6758FC7E4D3B4195/image-dimensions/38x38?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04_2" href="/t5/user/viewprofilepage/user-id/17186"><img class="lia-user-avatar-message" title="Anton" alt="Anton" id="display_5e1d0317715d04_2" src="/t5/image/serverpage/image-id/124062i6758FC7E4D3B4195/image-dimensions/38x38?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -5343,10 +5343,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Anton" itemprop="url" id="link_5e1d0151eeac9e_3" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/17186"><span class="">Anton</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Thought Leader | Partner" alt="Thought Leader | Partner" id="display_0_5e1d0151eeac9e_1" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/partner-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Anton" itemprop="url" id="link_5e1d0317715d04_3" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/17186"><span class="">Anton</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Thought Leader | Partner" alt="Thought Leader | Partner" id="display_0_5e1d0317715d04_1" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/partner-color.svg"/>
+ 		
+ 		
+ 		
+@@ -5406,7 +5406,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e_3" href="/t5/user/viewprofilepage/user-id/87451"><img class="lia-user-avatar-message" title="Ben_M" alt="Ben_M" id="display_5e1d0151eeac9e_3" src="/t5/image/serverpage/avatar-name/suv/avatar-theme/candy/avatar-collection/transit/avatar-display-size/message/version/2?xdesc=1.0"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04_3" href="/t5/user/viewprofilepage/user-id/87451"><img class="lia-user-avatar-message" title="Ben_M" alt="Ben_M" id="display_5e1d0317715d04_3" src="/t5/image/serverpage/avatar-name/suv/avatar-theme/candy/avatar-collection/transit/avatar-display-size/message/version/2?xdesc=1.0"/>
+ 					
+ 				</a>
+ 				
+@@ -5428,7 +5428,7 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Ben_M" itemprop="url" id="link_5e1d0151eeac9e_4" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/87451"><span class="">Ben_M</span></a>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of Ben_M" itemprop="url" id="link_5e1d0317715d04_4" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/87451"><span class="">Ben_M</span></a>
+ 		
+ 		
+ 		
+@@ -5491,7 +5491,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e_4" href="/t5/user/viewprofilepage/user-id/123775"><img class="lia-user-avatar-message" title="danmoyle" alt="danmoyle" id="display_5e1d0151eeac9e_4" src="/t5/image/serverpage/image-id/78949i1FED35B475025824/image-dimensions/38x38?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04_4" href="/t5/user/viewprofilepage/user-id/123775"><img class="lia-user-avatar-message" title="danmoyle" alt="danmoyle" id="display_5e1d0317715d04_4" src="/t5/image/serverpage/image-id/78949i1FED35B475025824/image-dimensions/38x38?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -5513,10 +5513,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of danmoyle" itemprop="url" id="link_5e1d0151eeac9e_5" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/123775"><span class="">danmoyle</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Most Valuable Member | Diamond Partner" alt="Most Valuable Member | Diamond Partner" id="display_0_5e1d0151eeac9e_2" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/diamond-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of danmoyle" itemprop="url" id="link_5e1d0317715d04_5" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/123775"><span class="">danmoyle</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Most Valuable Member | Diamond Partner" alt="Most Valuable Member | Diamond Partner" id="display_0_5e1d0317715d04_2" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/diamond-color.svg"/>
+ 		
+ 		
+ 		
+@@ -5576,7 +5576,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e_5" href="/t5/user/viewprofilepage/user-id/141"><img class="lia-user-avatar-message" title="TomM2" alt="TomM2" id="display_5e1d0151eeac9e_5" src="/t5/image/serverpage/image-id/142818i0C477CD526B9D548/image-dimensions/38x38/image-coordinates/0%2C252%2C1512%2C1764?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04_5" href="/t5/user/viewprofilepage/user-id/141"><img class="lia-user-avatar-message" title="TomM2" alt="TomM2" id="display_5e1d0317715d04_5" src="/t5/image/serverpage/image-id/142818i0C477CD526B9D548/image-dimensions/38x38/image-coordinates/0%2C252%2C1512%2C1764?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -5598,10 +5598,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of TomM2" itemprop="url" id="link_5e1d0151eeac9e_6" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/141"><span class="">TomM2</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Thought Leader | Platinum Partner" alt="Thought Leader | Platinum Partner" id="display_0_5e1d0151eeac9e_3" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/platinum-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of TomM2" itemprop="url" id="link_5e1d0317715d04_6" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/141"><span class="">TomM2</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Thought Leader | Platinum Partner" alt="Thought Leader | Platinum Partner" id="display_0_5e1d0317715d04_3" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/platinum-color.svg"/>
+ 		
+ 		
+ 		
+@@ -5661,7 +5661,7 @@
+ 		<div class="UserAvatar lia-user-avatar lia-component-common-widget-user-avatar">
+ 	
+ 			
+-				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0151eeac9e_6" href="/t5/user/viewprofilepage/user-id/53048"><img class="lia-user-avatar-message" title="evaldas" alt="evaldas" id="display_5e1d0151eeac9e_6" src="/t5/image/serverpage/image-id/123770iAE64DDBAC1B799E9/image-dimensions/38x38/image-coordinates/0%2C0%2C400%2C400?v=v2"/>
++				<a class="UserAvatar lia-link-navigation" tabindex="-1" target="_self" id="link_1_5e1d0317715d04_6" href="/t5/user/viewprofilepage/user-id/53048"><img class="lia-user-avatar-message" title="evaldas" alt="evaldas" id="display_5e1d0317715d04_6" src="/t5/image/serverpage/image-id/123770iAE64DDBAC1B799E9/image-dimensions/38x38/image-coordinates/0%2C0%2C400%2C400?v=v2"/>
+ 					
+ 				</a>
+ 				
+@@ -5683,10 +5683,10 @@
+ 				
+ 		
+ 		
+-			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of evaldas" itemprop="url" id="link_5e1d0151eeac9e_7" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/53048"><span class="">evaldas</span></a>
+-		
+-		
+-		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Key Advisor | Platinum Partner" alt="Key Advisor | Platinum Partner" id="display_0_5e1d0151eeac9e_4" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/platinum-color.svg"/>
++			<a class="lia-link-navigation lia-page-link lia-user-name-link" style="" target="_self" aria-label="View Profile of evaldas" itemprop="url" id="link_5e1d0317715d04_7" href="https://community.hubspot.com/t5/user/viewprofilepage/user-id/53048"><span class="">evaldas</span></a>
++		
++		
++		<img class="lia-user-rank-icon lia-user-rank-icon-right" title="Key Advisor | Platinum Partner" alt="Key Advisor | Platinum Partner" id="display_0_5e1d0317715d04_4" src="https://cdn2.hubspot.net/hubfs/53/Partners%20Redesign%202019/Agencies/tag-icons/platinum-color.svg"/>
+ 		
+ 		
+ 		
+@@ -5745,7 +5745,7 @@
+ 	
+ </div>
+ 	
+-	<div class="lia-view-all"><a class="lia-link-navigation" id="link_5e1d0151eeac9e_8" href="/t5/solutions/acceptedsolutionsleaderboardpage/node-display-id/community%3Amjmao93648/timerange/six_months">View All</a></div>
++	<div class="lia-view-all"><a class="lia-link-navigation" id="link_5e1d0317715d04_8" href="/t5/solutions/acceptedsolutionsleaderboardpage/node-display-id/community%3Amjmao93648/timerange/six_months">View All</a></div>
+ 
+ </div></div></div></div><div class="lia-decoration-border-bottom"><div> </div></div></div></div>				  
+             
+@@ -5944,7 +5944,7 @@
+ 	
+ 	
+ 	<script type="text/javascript">
+-	new Image().src = ["/","b","e","a","c","o","n","/","1","5","8","2","0","3","8","3","1","1","3","3","_","1","7","4","8","9","4","8","3","3","1","3","9","0",".","g","i","f"].join("");
++	new Image().src = ["/","b","e","a","c","o","n","/","1","5","8","2","0","3","8","3","5","8","3","9","_","1","7","4","8","9","4","8","3","3","9","0","0","1",".","g","i","f"].join("");
+ </script>
+ <script type="text/javascript" src="/t5/scripts/C1D0FDEB5D557CE5FA1EFA105E95A13F/lia-scripts-common-min.js"></script><script type="text/javascript" src="/t5/scripts/F83FBC401D584F570096CBF3133CD98C/lia-scripts-body-min.js"></script><script language="javascript" type="text/javascript">
+ <!--
+@@ -5963,7 +5963,7 @@
+ 		// ?no_esc behind the expression, but can't have that conditionally there because FreeMarker will just throw
+ 		// an exception just because the built in is in the code if auto-escaping is disabled...
+ 		window.$core = {
+-			config: {"initialized" : true,"debug" : false,"devmode" : false,"env" : "prod","context" : "component","versions" : {"lithium" : 25.4,"freemarker" : "2.3.26-incubating","core.component" : 23.8,"core.users" : 23.5,"core" : 23.4},"file" : "core.cmp.noscript","output" : "undefined","locale" : {"charset" : "UTF-8","timezone" : "US/Eastern","format" : {"date" : "MMM d, yyyy","time" : "h:mm a","full" : "MMM d, yyyy h:mm a","relative" : true,"cutoff" : 31}},"lang" : "en","langs" : ["en","de","es","fr","ja","pt-br"],"node" : {"id" : "mjmao93648","uid" : 1,"lang" : "en","type" : "community","style" : "none","url" : "https://community.hubspot.com/","quilt" : "CommunityPage","skin" : "hubspot","path" : "\/","top" : "\/categories/id/mjmao93648","settings_key" : "config_node"},"user" : {"admin" : false,"mod" : false,"auth" : false,"device" : "desktop","lang" : "en","registered" : false,"roles" : [],"show_text_keys" : false,"settings_key" : "config_user","settings" : {}},"cache" : {"cached" : false,"type" : "","map" : {},"config" : {"usercache" : {"inactiveTime" : 1200000,"maximumTime" : 7200000,"maxSize" : 10000},"appcache" : {"inactiveTime" : 1200000,"maximumTime" : 7200000,"maxSize" : 10000}}},"modules" : {"api" : false,"community" : false,"component" : true,"nodes" : false,"templates" : false,"users" : true},"ids" : {"lang" : {"en" : "hubspot_community_en","de" : "hubspot_community_de","es" : "hubspot_community_es","fr" : "hubspot_community_fr","ja" : "hubspot_community_jp","pt" : "hubspot_community_pt"}},"request" : {"get" : "","uri" : "https://community.hubspot.com/","type" : "GET","https" : true,"options" : {},"context" : "","endpoint" : "https://community.hubspot.com/mjmao93648/plugins/custom/hubspot/hubspot/controller"},"rest_default_version" : 1,"rest_base_url_v1" : "https://community.hubspot.com/restapi/v1","rest_base_url_v2" : "https://community.hubspot.com/api/2.0/search?q=","stats" : {"requests" : 0,"total" : 0,"calls" : []},"logs" : []},
++			config: {"initialized" : true,"debug" : false,"devmode" : false,"env" : "prod","context" : "component","versions" : {"lithium" : 25.4,"freemarker" : "2.3.26-incubating","core.component" : 23.8,"core.users" : 23.5,"core" : 23.4},"file" : "core.cmp.noscript","output" : "undefined","locale" : {"charset" : "UTF-8","timezone" : "US/Eastern","format" : {"date" : "MMM d, yyyy","time" : "h:mm a","full" : "MMM d, yyyy h:mm a","relative" : true,"cutoff" : 31}},"lang" : "en","langs" : ["en","de","es","fr","ja","pt-br"],"node" : {"id" : "mjmao93648","uid" : 1,"lang" : "en","type" : "community","style" : "none","url" : "https://community.hubspot.com/","quilt" : "CommunityPage","skin" : "hubspot","path" : "\/","top" : "\/categories/id/mjmao93648","settings_key" : "config_node"},"user" : {"admin" : false,"mod" : false,"auth" : false,"device" : "desktop","lang" : "en","registered" : false,"roles" : [],"show_text_keys" : false,"settings_key" : "config_user","settings" : {}},"cache" : {"cached" : false,"type" : "","map" : {},"config" : {"usercache" : {"inactiveTime" : 1200000,"maximumTime" : 7200000,"maxSize" : 10000},"appcache" : {"inactiveTime" : 1200000,"maximumTime" : 7200000,"maxSize" : 10000}}},"modules" : {"api" : false,"community" : false,"component" : true,"nodes" : false,"templates" : false,"users" : true},"ids" : {"lang" : {"en" : "hubspot_community_en","de" : "hubspot_community_de","es" : "hubspot_community_es","fr" : "hubspot_community_fr","ja" : "hubspot_community_jp","pt" : "hubspot_community_pt"}},"request" : {"get" : "","uri" : "https://community.hubspot.com/","type" : "POST","https" : true,"options" : {},"context" : "","endpoint" : "https://community.hubspot.com/mjmao93648/plugins/custom/hubspot/hubspot/controller"},"rest_default_version" : 1,"rest_base_url_v1" : "https://community.hubspot.com/restapi/v1","rest_base_url_v2" : "https://community.hubspot.com/api/2.0/search?q=","stats" : {"requests" : 0,"total" : 0,"calls" : []},"logs" : []},
+ 			properties: {},
+ 			// Add a reference to the global (native) JS object for the community, can be useful
+ 			lithium: LITHIUM?.CommunityJsonObject,
+@@ -8248,24 +8248,24 @@
+   } 
+ })(LITHIUM.jQuery)
+ 
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013e4c0a5b","feedbackSelector":".InfoMessage"});
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013e4c0a5b_0","feedbackSelector":".InfoMessage"});
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013e4c0a5b_1","feedbackSelector":".InfoMessage"});
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013e4c0a5b_2","feedbackSelector":".InfoMessage"});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d030509b2e3","feedbackSelector":".InfoMessage"});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d030509b2e3_0","feedbackSelector":".InfoMessage"});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d030509b2e3_1","feedbackSelector":".InfoMessage"});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d030509b2e3_2","feedbackSelector":".InfoMessage"});
+ LITHIUM.AjaxFeedback(".lia-inline-ajax-feedback", "LITHIUM:hideAjaxFeedback", ".lia-inline-ajax-feedback-persist");
+ LITHIUM.Placeholder();
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.defaultAjaxFeedbackHtml = \"<div class=\\\"lia-inline-ajax-feedback lia-component-common-widget-ajax-feedback\\\">\\n\\t\\t\\t<div class=\\\"AjaxFeedback\\\" id=\\\"ajaxFeedback_5e1d013e84d174\\\"><\\/div>\\n\\t\\t\\t\\n\\t\\n\\n\\t\\n\\n\\t\\t<\\/div>\";LITHIUM.AjaxSupport.defaultAjaxErrorHtml = \"<span id=\\\"feedback-errorfeedback_5e1d013e92e56f\\\"> <\\/span>\\n\\n\\t\\n\\t\\t<div class=\\\"InfoMessage lia-panel-feedback-inline-alert lia-component-common-widget-feedback\\\" id=\\\"feedback_5e1d013e92e56f\\\">\\n\\t\\t\\t<div role=\\\"alert\\\" class=\\\"lia-text\\\">\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t<p ng-non-bindable=\\\"\\\" tabindex=\\\"0\\\">\\n\\t\\t\\t\\t\\t\\tSorry, unable to complete the action you requested.\\n\\t\\t\\t\\t\\t<\\/p>\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\t\\t\\t<\\/div>\\n\\n\\t\\t\\t\\n\\t\\t<\\/div>\";LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013e7c1668', 'disableAutoComplete', '#ajaxfeedback_5e1d013e4c0a5b_0', 'LITHIUM:ajaxError', {}, 'iycTouDCvwSreD5bAdN0x3YiFB9bkkOGQ6GrSrhxvlc.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"iklazVfnHp8gPwtzKofXbFV7PK9o7D-gIOATfkkvEbI.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013e7c1668\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d013e4c0a5b_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.messagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013ebad531', 'disableAutoComplete', '#ajaxfeedback_5e1d013e4c0a5b_0', 'LITHIUM:ajaxError', {}, 'aEDySf1ochsQnW3I6obfeBuybPFGOL24KFpdLW0kuas.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"ro3iKWT5C0GuFdBvYRm7SCmFry4UkepTSEkoOoTtlW0.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013ebad531\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d013e4c0a5b_1","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.tkbmessagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching for users...","emptyText":"No Matches","successText":"Users found:","defaultText":"Enter a user name or rank","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013ed5cfb3', 'disableAutoComplete', '#ajaxfeedback_5e1d013e4c0a5b_0', 'LITHIUM:ajaxError', {}, '48feFbTb63-VfeLMR-yeslivhTv-7LvdIL54PueLfs8.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"ZSkhg6yOoh9jjRgzNKIX8vS4jXoUfYEtN1dPaU3sc0Q.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013ed5cfb3\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#userSearchField_5e1d013e4c0a5b","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield.usersearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:userExistsQuery","parameters":{"javascript.ignore_combine_and_minify":"true"}},"tokenId":"ajax","elementSelector":"#userSearchField_5e1d013e4c0a5b","action":"userExistsQuery","feedbackSelector":"#ajaxfeedback_5e1d013e4c0a5b_0","url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield:userexistsquery?t:cp=search/contributions/page","ajaxErrorEventName":"LITHIUM:ajaxError","token":"FNceZt_SFEmb_iqJ_sm8klFFE7_xqgkImG4itk9QI_c."});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013eeeffcc', 'disableAutoComplete', '#ajaxfeedback_5e1d013e4c0a5b_0', 'LITHIUM:ajaxError', {}, 'XPhZkxcS6fMxP5hDHZEPzVYh2yOA6g4kg12JYn3AoKg.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"aR9gvOvV1rJp5SnyYhpxHDx70ZME0Ktg6TbADODNw7g.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013eeeffcc\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#noteSearchField_5e1d013e4c0a5b_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.notesearchfield.notesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013f02bf4a', 'disableAutoComplete', '#ajaxfeedback_5e1d013e4c0a5b_0', 'LITHIUM:ajaxError', {}, '7_qL_LKY0gN-PUeksC1JcMYkMcxyqbtl1xlKE9uMCsM.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"PSOUDWpGII_Id-4965KW3JXmR7kQC35ibujgEVEtihs.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013f02bf4a\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#productSearchField_5e1d013e4c0a5b","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.productsearchfield.productsearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.defaultAjaxFeedbackHtml = \"<div class=\\\"lia-inline-ajax-feedback lia-component-common-widget-ajax-feedback\\\">\\n\\t\\t\\t<div class=\\\"AjaxFeedback\\\" id=\\\"ajaxFeedback_5e1d0305424521\\\"><\\/div>\\n\\t\\t\\t\\n\\t\\n\\n\\t\\n\\n\\t\\t<\\/div>\";LITHIUM.AjaxSupport.defaultAjaxErrorHtml = \"<span id=\\\"feedback-errorfeedback_5e1d030554acf2\\\"> <\\/span>\\n\\n\\t\\n\\t\\t<div class=\\\"InfoMessage lia-panel-feedback-inline-alert lia-component-common-widget-feedback\\\" id=\\\"feedback_5e1d030554acf2\\\">\\n\\t\\t\\t<div role=\\\"alert\\\" class=\\\"lia-text\\\">\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t<p ng-non-bindable=\\\"\\\" tabindex=\\\"0\\\">\\n\\t\\t\\t\\t\\t\\tSorry, unable to complete the action you requested.\\n\\t\\t\\t\\t\\t<\\/p>\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\n\\t\\t\\t\\t\\n\\t\\t\\t<\\/div>\\n\\n\\t\\t\\t\\n\\t\\t<\\/div>\";LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d0305383420', 'disableAutoComplete', '#ajaxfeedback_5e1d030509b2e3_0', 'LITHIUM:ajaxError', {}, 'l1FzMDYmrXXgVkBcemuNeAQbnVbUVOgB54z9mDuq1eA.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"Lbc6BWNtCoO71WvJ5es4RFizCgCFriOWKMUIfk0Wo9M.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d0305383420\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d030509b2e3_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.messagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d030581878f', 'disableAutoComplete', '#ajaxfeedback_5e1d030509b2e3_0', 'LITHIUM:ajaxError', {}, 'm5dPlq8ygPbg8u3OOjHZygnSjN_ihswZd4_zpIurkB0.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"s1c9cNySXH7IYE4wiER-UZkmIJa3k-AgU2L8oIWeIgo.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d030581878f\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d030509b2e3_1","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.tkbmessagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching for users...","emptyText":"No Matches","successText":"Users found:","defaultText":"Enter a user name or rank","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d03059d1e15', 'disableAutoComplete', '#ajaxfeedback_5e1d030509b2e3_0', 'LITHIUM:ajaxError', {}, 'alGYvoZqG32qL5pZYZfOH1rldcJI-28G8eTkFtahTSY.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"E5xaU5wdWNoL9QXBoZtZ_j2Qwbhb39jDnq85XO9gTIg.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d03059d1e15\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#userSearchField_5e1d030509b2e3","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield.usersearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:userExistsQuery","parameters":{"javascript.ignore_combine_and_minify":"true"}},"tokenId":"ajax","elementSelector":"#userSearchField_5e1d030509b2e3","action":"userExistsQuery","feedbackSelector":"#ajaxfeedback_5e1d030509b2e3_0","url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield:userexistsquery?t:cp=search/contributions/page","ajaxErrorEventName":"LITHIUM:ajaxError","token":"FVuA-FK63DzDSkXJ-MBjxb_AyxsqaBHD4UTSe8MzxoI."});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d0305bb3e6d', 'disableAutoComplete', '#ajaxfeedback_5e1d030509b2e3_0', 'LITHIUM:ajaxError', {}, 'Ryy09CXBjMVd3SVKwEtvNG0agdXWAomuALyK95uU46o.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"LrzGMf2qG65JM7zkqhN6IDscfxqI9nt4ojYEDrO-wUA.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d0305bb3e6d\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#noteSearchField_5e1d030509b2e3_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.notesearchfield.notesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d0305d9bd61', 'disableAutoComplete', '#ajaxfeedback_5e1d030509b2e3_0', 'LITHIUM:ajaxError', {}, 'a-idJzQXjsjejJXY55X01qIwcZvkunJ6ZJAUMIioO8Q.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"pD_7KU4muRk9Vq6lrKmAUMulCbnveVfS53mYMnsd2tI.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d0305d9bd61\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#productSearchField_5e1d030509b2e3","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.productsearchfield.productsearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+ LITHIUM.Link({"linkSelector":"a.lia-link-ticket-post-action"});
+-LITHIUM.AjaxSupport.fromLink('#enableAutoComplete_5e1d013e4c0a5b', 'enableAutoComplete', '#ajaxfeedback_5e1d013e4c0a5b_0', 'LITHIUM:ajaxError', {}, 'S3xusXWS-k8Rn7Lxs_mym-xrdLsVFeHxBSW2Jw3QINs.', 'ajax');
+-LITHIUM.Tooltip({"bodySelector":"body#lia-body","delay":30,"enableOnClickForTrigger":false,"predelay":10,"triggerSelector":"#link_5e1d013e4c0a5b","tooltipContentSelector":"#link_5e1d013e4c0a5b_0-tooltip-element .content","position":["bottom","left"],"tooltipElementSelector":"#link_5e1d013e4c0a5b_0-tooltip-element","events":{"def":"focus mouseover keydown,blur mouseout keydown"},"hideOnLeave":true});
++LITHIUM.AjaxSupport.fromLink('#enableAutoComplete_5e1d030509b2e3', 'enableAutoComplete', '#ajaxfeedback_5e1d030509b2e3_0', 'LITHIUM:ajaxError', {}, 'NVwzvuOuyVHgyLbb-3BM_qD0_st7rimlh5LpoJLc5No.', 'ajax');
++LITHIUM.Tooltip({"bodySelector":"body#lia-body","delay":30,"enableOnClickForTrigger":false,"predelay":10,"triggerSelector":"#link_5e1d030509b2e3","tooltipContentSelector":"#link_5e1d030509b2e3_0-tooltip-element .content","position":["bottom","left"],"tooltipElementSelector":"#link_5e1d030509b2e3_0-tooltip-element","events":{"def":"focus mouseover keydown,blur mouseout keydown"},"hideOnLeave":true});
+ LITHIUM.HelpIcon({"selectors":{"helpIconSelector":".help-icon .lia-img-icon-help"}});
+-LITHIUM.SearchAutoCompleteToggle({"containerSelector":"#searchautocompletetoggle_5e1d013e4c0a5b","enableAutoCompleteSelector":".search-autocomplete-toggle-link","enableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:enableAutoComplete","disableAutoCompleteSelector":".lia-autocomplete-toggle-off","disableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:disableAutoComplete","autoCompleteSelector":".lia-autocomplete-input"});
+-LITHIUM.SearchForm({"asSearchActionIdSelector":".lia-as-search-action-id","useAutoComplete":true,"selectSelector":".lia-search-form-granularity","useClearSearchButton":false,"buttonSelector":".lia-button-searchForm-action","asSearchActionIdParamName":"as-search-action-id","formSelector":"#lia-searchformV32_5e1d013e4c0a5b","asSearchActionIdHeaderKey":"X-LI-AS-Search-Action-Id","inputSelector":"#messageSearchField_5e1d013e4c0a5b_0:not(.lia-js-hidden)","clearSearchButtonSelector":null});
++LITHIUM.SearchAutoCompleteToggle({"containerSelector":"#searchautocompletetoggle_5e1d030509b2e3","enableAutoCompleteSelector":".search-autocomplete-toggle-link","enableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:enableAutoComplete","disableAutoCompleteSelector":".lia-autocomplete-toggle-off","disableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:disableAutoComplete","autoCompleteSelector":".lia-autocomplete-input"});
++LITHIUM.SearchForm({"asSearchActionIdSelector":".lia-as-search-action-id","useAutoComplete":true,"selectSelector":".lia-search-form-granularity","useClearSearchButton":false,"buttonSelector":".lia-button-searchForm-action","asSearchActionIdParamName":"as-search-action-id","formSelector":"#lia-searchformV32_5e1d030509b2e3","asSearchActionIdHeaderKey":"X-LI-AS-Search-Action-Id","inputSelector":"#messageSearchField_5e1d030509b2e3_0:not(.lia-js-hidden)","clearSearchButtonSelector":null});
+ LITHIUM.Form.resetFieldForFocusFound();
+  (function($) {
+ document.querySelector('a.login-link').classList.add('homepage-nav-login');
+@@ -8405,21 +8405,21 @@
+   } 
+ })(LITHIUM.jQuery)
+ 
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013f5e29fd","feedbackSelector":".InfoMessage"});
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013f5e29fd_0","feedbackSelector":".InfoMessage"});
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013f5e29fd_1","feedbackSelector":".InfoMessage"});
+-LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d013f5e29fd_2","feedbackSelector":".InfoMessage"});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013f7e7453', 'disableAutoComplete', '#ajaxfeedback_5e1d013f5e29fd_0', 'LITHIUM:ajaxError', {}, 'CbzbwnID908CIqZWJkxP9Tp2fmpxbhPKJfZN5SPBG2g.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"TaNPc2-Lprlnim5asL84GZFbJLhWIWpa9a4TqDGkaFs.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013f7e7453\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d013f5e29fd_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.messagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013f947ef0', 'disableAutoComplete', '#ajaxfeedback_5e1d013f5e29fd_0', 'LITHIUM:ajaxError', {}, 'eNHvIuat-cYKJNldj9SJFtPr6iv9rwWy5irHuZB5r9o.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"k1CzEak-QsBqe_gJhkXO-WSpiKBjvrHVYnJnQDcgdZY.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013f947ef0\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d013f5e29fd_1","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.tkbmessagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching for users...","emptyText":"No Matches","successText":"Users found:","defaultText":"Enter a user name or rank","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013faa983d', 'disableAutoComplete', '#ajaxfeedback_5e1d013f5e29fd_0', 'LITHIUM:ajaxError', {}, '02PesEBfclJZmIUXynhmgj4Z18FROgFTO4avBO2dttE.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"bG0m39ERX3kQ2r0gIiGaWqQ1F-i1eWlXC8wuminL-bw.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013faa983d\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#userSearchField_5e1d013f5e29fd","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield.usersearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:userExistsQuery","parameters":{"javascript.ignore_combine_and_minify":"true"}},"tokenId":"ajax","elementSelector":"#userSearchField_5e1d013f5e29fd","action":"userExistsQuery","feedbackSelector":"#ajaxfeedback_5e1d013f5e29fd_0","url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield:userexistsquery?t:cp=search/contributions/page","ajaxErrorEventName":"LITHIUM:ajaxError","token":"mJmz9QHAclVe0VCRadi-jBBQFiFO5DwW4kKHYJlfFkY."});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013fbec648', 'disableAutoComplete', '#ajaxfeedback_5e1d013f5e29fd_0', 'LITHIUM:ajaxError', {}, '8M-kdWNzs-WiGc6dwy1DvWiYjX-uhtfbN9kDYIpC3Js.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"GpHm7smYdkQ-Bvv8pHPMm_eb8dHDH_Iaq4y6PG0GcRE.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013fbec648\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#noteSearchField_5e1d013f5e29fd_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.notesearchfield.notesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d013fd1c0a9', 'disableAutoComplete', '#ajaxfeedback_5e1d013f5e29fd_0', 'LITHIUM:ajaxError', {}, 'XnPj2F8ZpbATkWjM7M2lVUl3lt2VMK8e2UkV17Km-vI.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"rllaZ2bW9Af1qRpm9O9T6sZYEtqJJldrLxBKpPPG95Y.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d013fd1c0a9\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#productSearchField_5e1d013f5e29fd","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.productsearchfield.productsearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
+-LITHIUM.AjaxSupport.fromLink('#enableAutoComplete_5e1d013f5e29fd', 'enableAutoComplete', '#ajaxfeedback_5e1d013f5e29fd_0', 'LITHIUM:ajaxError', {}, 'bxacuMZleRHpqae-2RHu-WhHSopldfKGkX0lu8evdkA.', 'ajax');
+-LITHIUM.Tooltip({"bodySelector":"body#lia-body","delay":30,"enableOnClickForTrigger":false,"predelay":10,"triggerSelector":"#link_5e1d013f5e29fd","tooltipContentSelector":"#link_5e1d013f5e29fd_0-tooltip-element .content","position":["bottom","left"],"tooltipElementSelector":"#link_5e1d013f5e29fd_0-tooltip-element","events":{"def":"focus mouseover keydown,blur mouseout keydown"},"hideOnLeave":true});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d03063d2a29","feedbackSelector":".InfoMessage"});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d03063d2a29_0","feedbackSelector":".InfoMessage"});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d03063d2a29_1","feedbackSelector":".InfoMessage"});
++LITHIUM.InformationBox({"updateFeedbackEvent":"LITHIUM:updateAjaxFeedback","componentSelector":"#informationbox_5e1d03063d2a29_2","feedbackSelector":".InfoMessage"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d03065f8650', 'disableAutoComplete', '#ajaxfeedback_5e1d03063d2a29_0', 'LITHIUM:ajaxError', {}, 'nV1VODccR6RTtHzLuTQuEiMru3GujxSAAIm50IENr-c.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"QbPlUfUH6yaYJ0Wa60x2XMBLgmHzXeWxJkV0cGiBmRs.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d03065f8650\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d03063d2a29_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.messagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d0306784fa3', 'disableAutoComplete', '#ajaxfeedback_5e1d03063d2a29_0', 'LITHIUM:ajaxError', {}, '35kgN_NrP3uyXTk-ZtUGZ7MdagPF5_2afeLUejnb7po.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"zCaAwwsFzfMoJK7iyxDKUF9tWUkNOFj_9SoHxUF6TnA.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d0306784fa3\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":3},"inputSelector":"#messageSearchField_5e1d03063d2a29_1","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.tkbmessagesearchfield.messagesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching for users...","emptyText":"No Matches","successText":"Users found:","defaultText":"Enter a user name or rank","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d030692528f', 'disableAutoComplete', '#ajaxfeedback_5e1d03063d2a29_0', 'LITHIUM:ajaxError', {}, 'l5wIdYXL1MHAcr5YHif1RkgFyrm2arhpSr9yHxzhGYQ.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"rvGmh4__gwP9X5VZAItPqw9rsKMTrk3MYLuAmKNh7Mg.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d030692528f\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#userSearchField_5e1d03063d2a29","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield.usersearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:userExistsQuery","parameters":{"javascript.ignore_combine_and_minify":"true"}},"tokenId":"ajax","elementSelector":"#userSearchField_5e1d03063d2a29","action":"userExistsQuery","feedbackSelector":"#ajaxfeedback_5e1d03063d2a29_0","url":"https://community.hubspot.com/t5/community/page.searchformv32.usersearchfield:userexistsquery?t:cp=search/contributions/page","ajaxErrorEventName":"LITHIUM:ajaxError","token":"IiyW7EzWLzuTcG-aig_atAQ7XhSiMDSkzuwagv5r3xI."});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d0306ace352', 'disableAutoComplete', '#ajaxfeedback_5e1d03063d2a29_0', 'LITHIUM:ajaxError', {}, 'W2L9wDG_WRBeo6ns66_8r5pItXzMj4Djmpwt6UFGxK4.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"dqt53HfsZeSixPw8hism-MQvR4gVzqifPMHHLEiY3XU.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d0306ace352\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#noteSearchField_5e1d03063d2a29_0","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.notesearchfield.notesearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AutoComplete({"options":{"triggerTextLength":0,"updateInputOnSelect":true,"loadingText":"Searching...","emptyText":"No Matches","successText":"Results:","defaultText":"Enter a search word","disabled":false,"footerContent":[{"scripts":"\n\n;(function($){LITHIUM.Link=function(params){var $doc=$(document);function handler(event){var $link=$(this);var token=$link.data('lia-action-token');if($link.data('lia-ajax')!==true&&token!==undefined){if(event.isPropagationStopped()===false&&event.isImmediatePropagationStopped()===false&&event.isDefaultPrevented()===false){event.stop();var $form=$('<form>',{method:'POST',action:$link.attr('href'),enctype:'multipart/form-data'});var $ticket=$('<input>',{type:'hidden',name:'lia-action-token',value:token});$form.append($ticket);$(document.body).append($form);$form.submit();$doc.trigger('click');}}}\nif($doc.data('lia-link-action-handler')===undefined){$doc.data('lia-link-action-handler',true);$doc.on('click.link-action',params.linkSelector,handler);$.fn.on=$.wrap($.fn.on,function(proceed){var ret=proceed.apply(this,$.makeArray(arguments).slice(1));if(this.is(document)){$doc.off('click.link-action',params.linkSelector,handler);proceed.call(this,'click.link-action',params.linkSelector,handler);}\nreturn ret;});}}})(LITHIUM.jQuery);\r\n\nLITHIUM.Link({\n  \"linkSelector\" : \"a.lia-link-ticket-post-action\"\n});LITHIUM.AjaxSupport.fromLink('#disableAutoComplete_5e1d0306c64d4f', 'disableAutoComplete', '#ajaxfeedback_5e1d03063d2a29_0', 'LITHIUM:ajaxError', {}, '4IFis2EN4BnpLpQ6iMsIJ_FHLCDeb_5K3K1_3rfA3pE.', 'ajax');","content":"<a class=\"lia-link-navigation lia-autocomplete-toggle-off lia-link-ticket-post-action lia-component-search-action-disable-auto-complete\" data-lia-action-token=\"ntz7MYmxskJ7zvqWMfsK9pLUAVWZk3vn4NIbpq5WZ_0.\" rel=\"nofollow\" id=\"disableAutoComplete_5e1d0306c64d4f\" href=\"https://community.hubspot.com/t5/community/page.disableautocomplete:disableautocomplete?t:cp=action/contributions/searchactions\">Turn off suggestions<\/a>"}],"prefixTriggerTextLength":0},"inputSelector":"#productSearchField_5e1d03063d2a29","redirectToItemLink":false,"url":"https://community.hubspot.com/t5/community/page.searchformv32.productsearchfield.productsearchfield:autocomplete?t:cp=search/contributions/page","resizeImageEvent":"LITHIUM:renderImages"});
++LITHIUM.AjaxSupport.fromLink('#enableAutoComplete_5e1d03063d2a29', 'enableAutoComplete', '#ajaxfeedback_5e1d03063d2a29_0', 'LITHIUM:ajaxError', {}, 'yQPOY6uV_DqZtJgr6x5gAQ115sqF0Z4KgDfnqTZ1UEw.', 'ajax');
++LITHIUM.Tooltip({"bodySelector":"body#lia-body","delay":30,"enableOnClickForTrigger":false,"predelay":10,"triggerSelector":"#link_5e1d03063d2a29","tooltipContentSelector":"#link_5e1d03063d2a29_0-tooltip-element .content","position":["bottom","left"],"tooltipElementSelector":"#link_5e1d03063d2a29_0-tooltip-element","events":{"def":"focus mouseover keydown,blur mouseout keydown"},"hideOnLeave":true});
+ LITHIUM.HelpIcon({"selectors":{"helpIconSelector":".help-icon .lia-img-icon-help"}});
+-LITHIUM.SearchAutoCompleteToggle({"containerSelector":"#searchautocompletetoggle_5e1d013f5e29fd","enableAutoCompleteSelector":".search-autocomplete-toggle-link","enableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:enableAutoComplete","disableAutoCompleteSelector":".lia-autocomplete-toggle-off","disableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:disableAutoComplete","autoCompleteSelector":".lia-autocomplete-input"});
+-LITHIUM.SearchForm({"asSearchActionIdSelector":".lia-as-search-action-id","useAutoComplete":true,"selectSelector":".lia-search-form-granularity","useClearSearchButton":false,"buttonSelector":".lia-button-searchForm-action","asSearchActionIdParamName":"as-search-action-id","formSelector":"#lia-searchformV32_5e1d013f5e29fd","nodesModel":{"user|user":{"title":"Users","inputSelector":".lia-search-input-user"},"mjmao93648|community":{"title":"Search Community: HubSpot Community","inputSelector":".lia-search-input-message"}},"asSearchActionIdHeaderKey":"X-LI-AS-Search-Action-Id","inputSelector":"#messageSearchField_5e1d013f5e29fd_0:not(.lia-js-hidden)","clearSearchButtonSelector":null});
++LITHIUM.SearchAutoCompleteToggle({"containerSelector":"#searchautocompletetoggle_5e1d03063d2a29","enableAutoCompleteSelector":".search-autocomplete-toggle-link","enableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:enableAutoComplete","disableAutoCompleteSelector":".lia-autocomplete-toggle-off","disableAutocompleteSuccessEvent":"LITHIUM:ajaxSuccess:disableAutoComplete","autoCompleteSelector":".lia-autocomplete-input"});
++LITHIUM.SearchForm({"asSearchActionIdSelector":".lia-as-search-action-id","useAutoComplete":true,"selectSelector":".lia-search-form-granularity","useClearSearchButton":false,"buttonSelector":".lia-button-searchForm-action","asSearchActionIdParamName":"as-search-action-id","formSelector":"#lia-searchformV32_5e1d03063d2a29","nodesModel":{"user|user":{"title":"Users","inputSelector":".lia-search-input-user"},"mjmao93648|community":{"title":"Search Community: HubSpot Community","inputSelector":".lia-search-input-message"}},"asSearchActionIdHeaderKey":"X-LI-AS-Search-Action-Id","inputSelector":"#messageSearchField_5e1d03063d2a29_0:not(.lia-js-hidden)","clearSearchButtonSelector":null});
+  (function($) {
+ document.querySelector('a.login-link').classList.add('homepage-nav-login');
+ })(LITHIUM.jQuery);
+@@ -8625,7 +8625,7 @@
+  }
+ })(LITHIUM.jQuery);
+ 
+-LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:lightboxRenderComponent","parameters":{"componentParams":"{\n  \"surveyType\" : {\n    \"value\" : \"communityexperience\",\n    \"class\" : \"java.lang.String\"\n  },\n  \"surveyId\" : {\n    \"value\" : \"3\",\n    \"class\" : \"java.lang.Integer\"\n  },\n  \"triggerSelector\" : {\n    \"value\" : \"#valueSurveyLauncher\",\n    \"class\" : \"lithium.util.css.CssSelector\"\n  }\n}","componentId":"valuesurveys.widget.survey-prompt-dialog"},"trackableEvent":false},"tokenId":"ajax","elementSelector":"#valueSurveyLauncher","action":"lightboxRenderComponent","feedbackSelector":false,"url":"https://community.hubspot.com/t5/community/page.liabase.basebody.valuesurveylauncher.valuesurveylauncher:lightboxrendercomponent","ajaxErrorEventName":"LITHIUM:ajaxError","token":"o-QMD1Knhid31z55xSjz69CA6efLLheAl6qya8ErTxo."});
++LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:lightboxRenderComponent","parameters":{"componentParams":"{\n  \"surveyType\" : {\n    \"value\" : \"communityexperience\",\n    \"class\" : \"java.lang.String\"\n  },\n  \"surveyId\" : {\n    \"value\" : \"3\",\n    \"class\" : \"java.lang.Integer\"\n  },\n  \"triggerSelector\" : {\n    \"value\" : \"#valueSurveyLauncher\",\n    \"class\" : \"lithium.util.css.CssSelector\"\n  }\n}","componentId":"valuesurveys.widget.survey-prompt-dialog"},"trackableEvent":false},"tokenId":"ajax","elementSelector":"#valueSurveyLauncher","action":"lightboxRenderComponent","feedbackSelector":false,"url":"https://community.hubspot.com/t5/community/page.liabase.basebody.valuesurveylauncher.valuesurveylauncher:lightboxrendercomponent","ajaxErrorEventName":"LITHIUM:ajaxError","token":"rKV9bAGhQ2VM0PuD8w7YiZZZuS3BqgT6XUhsFE4p260."});
+ LITHIUM.Dialog.options['484608476'] = {"contentContext":"valuesurveys.widget.survey-prompt-dialog","dialogOptions":{"minHeight":399,"draggable":false,"maxHeight":800,"resizable":false,"autoOpen":false,"width":610,"minWidth":610,"dialogClass":"lia-content lia-panel-dialog lia-panel-dialog-modal-simple lia-panel-dialog-modal-valuesurvey","position":["center","center"],"modal":true,"maxWidth":610,"ariaLabel":"Feedback for community"},"contentType":"ajax"};
+ LITHIUM.Dialog({
+   "closeImageIconURL" : "https://community.hubspot.com/skins/images/FD26F91947D219FE042EAB80B2487727/responsive_peak/images/button_dialog_close.svg",
+@@ -8644,14 +8644,14 @@
+   "triggerEvent" : "click",
+   "dialogKey" : "dialogKey"
+ });
+-LITHIUM.ValueSurveyLauncher({"detectPopUpCSS":".lia-dialog-open","dialogLinkSelector":"#valueSurveyLauncher","launchDelay":64536});
++LITHIUM.ValueSurveyLauncher({"detectPopUpCSS":".lia-dialog-open","dialogLinkSelector":"#valueSurveyLauncher","launchDelay":64604});
+ LITHIUM.PartialRenderProxy({"limuirsComponentRenderedEvent":"LITHIUM:limuirsComponentRendered","relayEvent":"LITHIUM:partialRenderProxyRelay","listenerEvent":"LITHIUM:partialRenderProxy"});
+-LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:partialRenderProxyRelay","parameters":{"javascript.ignore_combine_and_minify":"true"}},"tokenId":"ajax","elementSelector":document,"action":"partialRenderProxyRelay","feedbackSelector":false,"url":"https://community.hubspot.com/t5/community/page.liabase.basebody.partialrenderproxy:partialrenderproxyrelay","ajaxErrorEventName":"LITHIUM:ajaxError","token":"xWzEDlBxNsCFIkI_DInSlj1J_G-QT4jSHkWLj7sNbwg."});
++LITHIUM.AjaxSupport({"ajaxOptionsParam":{"event":"LITHIUM:partialRenderProxyRelay","parameters":{"javascript.ignore_combine_and_minify":"true"}},"tokenId":"ajax","elementSelector":document,"action":"partialRenderProxyRelay","feedbackSelector":false,"url":"https://community.hubspot.com/t5/community/page.liabase.basebody.partialrenderproxy:partialrenderproxyrelay","ajaxErrorEventName":"LITHIUM:ajaxError","token":"1k1Lai79Z3DuAeVrw8n22dsvP940WO1Yy7XvNQTyJoM."});
+ LITHIUM.Auth.API_URL = "/t5/util/authcheckpage";
+ LITHIUM.Auth.LOGIN_URL_TMPL = "https://app.hubspot.com/khoros/integration/jwt/authenticate?referer=https%3A%2F%2FREPLACE_TEXT";
+ LITHIUM.Auth.KEEP_ALIVE_URL = "/t5/status/blankpage?keepalive";
+ LITHIUM.Auth.KEEP_ALIVE_TIME = 300000;
+-LITHIUM.Auth.CHECK_SESSION_TOKEN = 'QMlI3gbLDz5o3845c8SEHTVpvUjtR7TvHN1YQXgoiRc.';
++LITHIUM.Auth.CHECK_SESSION_TOKEN = 'O-puuP1K4oS3w38w9Rd73ytys5NXR4yocOVLbXVmhl0.';
+ LITHIUM.AjaxSupport.useTickets = false;
+ LITHIUM.Loader.runJsAttached();
+ // -->
