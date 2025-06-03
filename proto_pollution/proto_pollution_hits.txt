@@ -1,0 +1,110 @@
+[!!] https://hubspot.com
+[*] Response content differs
+
+[!!] https://app.hubspot.com
+[*] Response content differs
+
+[!!] https://community.hubspot.com
+[*] Reflected payload detected!
+[*] Response content differs
+
+[!!] https://knowledge.hubspot.com
+[*] Response content differs
+
+[!!] https://blog.hubspot.com
+[*] Response content differs
+
+[!!] https://meetings.hubspot.com
+[*] Response content differs
+
+[!!] https://api.hubspot.com
+[*] Response content differs
+
+[!!] https://one.hubspot.com
+[*] Response content differs
+
+[!!] https://liquidgrids.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://js.hubspot.com
+[*] Response content differs
+
+[!!] https://efficientcarbon.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://justaddiceorchids.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://opsecsecurity.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://164692.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://privacy.hubspot.com
+[*] Response content differs
+
+[!!] https://integritassolutions.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://blog.hubspot.com
+[*] Response content differs
+
+[!!] https://amlooking4.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://berkshire-company.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://electricguarddog.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://bl.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://accentuatewithin.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://erecruit.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://lawnmasterpensacola.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://p2energysolutions.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://junewarren-nickles.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://nigiwaiclub.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://static.hubspot.com
+[*] Response content differs
+
+[!!] https://android.hubspot.com
+[*] Response content differs
+
+[!!] https://112523.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://241955.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://cms2.hubspot.com
+[*] Response content differs
+
+[!!] https://157587.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://cta-eu1.hubspot.com
+[*] Response content differs
+
+[!!] https://altitude.sites.hubspot.com
+[*] Response content differs
+
+[!!] https://events.hubspot.com
+[*] Reflected payload detected!
+[*] Response content differs
+
